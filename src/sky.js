@@ -7,7 +7,7 @@ function dayNight(){const ph=(clock%DAYLEN)/DAYLEN,n=smooth((ph-.52)/.12)-smooth
   cTmp.copy(cDay).lerp(cNight,n);if(dusk>0)cTmp.lerp(sDusk,dusk*.18);scene.background.copy(cTmp);scene.fog.color.copy(cTmp);base.material.color.set('#cbbf8f').lerp(cNight,n*.85);
   sun.color.copy(sDay).lerp(sNight,n).lerp(sDusk,dusk*.45);sun.intensity=lerp(.84,.17,n);hemi.color.copy(hDay).lerp(hNight,n);hemi.groundColor.copy(gDay).lerp(gNight,n);hemi.intensity=lerp(.7,.3,n);
   cardMat.emissiveIntensity=lerp(.1,1.15,n);haloMat.opacity=n*.85;lamp.intensity=n*1.9;
-  const wu=waterMat.uniforms;wu.uN.value=n;wu.uT.value=time;let bn=0;for(const t of tiles.values())if(t.glowBr&&t.p>.9&&Math.hypot(t.i-player.x/TS,t.j-player.z/TS)<6){wu.uBr.value[bn++].set(...t.glowBr);if(bn===6)break}wu.uBn.value=bn;
+  const wu=waterMat.uniforms;wu.uN.value=n;wu.uT.value=time;let bn=0;for(const t of glowTiles)if(t.p>.9&&Math.hypot(t.i-player.x/TS,t.j-player.z/TS)<6){wu.uBr.value[bn++].set(...t.glowBr);if(bn===6)break}wu.uBn.value=bn;
   mFinal.uniforms.uBloom.value=lerp(.05,.8,n);mFinal.uniforms.uN.value=n;mFinal.uniforms.uT.value=time;mBright.uniforms.th.value=lerp(.96,.6,n);
   flies.visible=n>.02;if(flies.visible){ffMat.opacity=n*.95;for(let k=0;k<FFN;k++){const q=ffSeed[k],bx=player.x+mod(q[3]-player.x+5.5,11)-5.5,bz=player.z+mod(q[4]-player.z+5.5,11)-5.5,bl=.5+.5*Math.sin(time*q[2]*2.2+q[0]);
       ffPos[k*3]=bx+Math.sin(time*.5*q[2]+q[0])*.5;ffPos[k*3+1]=bl<.25?-5:.18+.22*(1+Math.sin(time*.7+q[1]));ffPos[k*3+2]=bz+Math.cos(time*.4*q[2]+q[1])*.5}ffGeo.attributes.position.needsUpdate=true}

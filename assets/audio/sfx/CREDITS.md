@@ -56,3 +56,4 @@ Mọi file trong thư mục này đều là CC0 hoặc phạm vi công cộng, �
 | woodblock_1.mp3 | 100 CC0 metal and wood SFX - wood_hit_01.ogg | rubberduck | CC0 1.0 (page shows creativecommons.org/publicdomain/zero/1.0) | https://opengameart.org/content/100-cc0-metal-and-wood-sfx |
 | woodblock_2.mp3 | 100 CC0 metal and wood SFX - wood_hit_05.ogg | rubberduck | CC0 1.0 (page shows creativecommons.org/publicdomain/zero/1.0) | https://opengameart.org/content/100-cc0-metal-and-wood-sfx |
 | woodblock_3.mp3 | 100 CC0 metal and wood SFX - wood_hit_09.ogg | rubberduck | CC0 1.0 (page shows creativecommons.org/publicdomain/zero/1.0) | https://opengameart.org/content/100-cc0-metal-and-wood-sfx |
+| rooster_1.ogg | File:Medium rooster crowing.ogg (giữ nguyên file gốc) | alys | Public domain | https://commons.wikimedia.org/wiki/File:Medium_rooster_crowing.ogg |

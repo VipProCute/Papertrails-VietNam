@@ -50,9 +50,9 @@ $('bGo').hidden=!SAVE.home;
 $('bReset').addEventListener('click',()=>{if(confirm('Xoá toàn bộ tiến độ: tem, đèn lồng đã thắp, vùng đã đi qua và kỷ lục?')){saveReset();location.reload()}});
 if(SAVE.best)$('best').textContent='Kỷ lục thử thách: '+SAVE.best+' điểm';
 
-let hudKey='';function hud(){const k=Math.round(dist)+'|'+food+'|'+lamps+'|'+big+'|'+shield+'|'+Math.ceil(boostT);if(k!==hudKey){hudKey=k;$('hDist').textContent=Math.round(dist);$('hFood').textContent=food;$('hBig').textContent=big;$('hShield').textContent=shield;$('hLamp').textContent=lamps;
+let hudKey='',hudStam,hudTired;function hud(){const k=Math.round(dist)+'|'+food+'|'+lamps+'|'+big+'|'+shield+'|'+Math.ceil(boostT);if(k!==hudKey){hudKey=k;$('hDist').textContent=Math.round(dist);$('hFood').textContent=food;$('hBig').textContent=big;$('hShield').textContent=shield;$('hLamp').textContent=lamps;
     $('hBoost').hidden=boostT<=0;$('hBoostT').textContent=Math.ceil(boostT)}
-  $('stamFill').style.width=player.stam+'%';$('stam').classList.toggle('low',player.tired);compass()}
+  if(player.stam!==hudStam){hudStam=player.stam;$('stamFill').style.width=hudStam+'%'}if(player.tired!==hudTired){hudTired=player.tired;$('stam').classList.toggle('low',hudTired)}compass()}
 /* la bàn: mũi tên chỉ về vùng chưa đến gần nhất, cập nhật tối đa 4 lần/giây */
 const CARD8=['Bắc','Đông Bắc','Đông','Đông Nam','Nam','Tây Nam','Tây','Tây Bắc'];let cmpT=0,cmpKey='-';
 function compass(){const n=performance.now();if(n-cmpT<250)return;cmpT=n;const el=$('compass');let h=null;

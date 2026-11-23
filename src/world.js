@@ -48,7 +48,7 @@ const BRIDGE=[{name:'Cầu ngói chợ Lương',n:'cau_ngoi',lift:.08,hw:.26,sp:
   {name:'Chùa Cầu Hội An',n:'chua_cau',lift:.26,hw:.26,sp:1},{name:'Cầu treo Tây Bắc',n:'cau_treo',lift:.22,hw:.24,sp:.85},
   {name:'Cầu treo Tây Nguyên',n:'cau_treo',lift:.22,hw:.24,sp:.85},{name:'Cầu sắt Bình Lợi',n:'cau_sat',lift:.2,hw:.26,sp:1}];
 
-const tiles=new Map(),dogs=[],eaten=new Set(),litSet=new Set(),ferries=[],ANIMAL={ga:1,co:1,trau:1,vit:1,voi:1},STALLS={quan:1,xebanhmi:1,xehutieu:1};
+const tiles=new Map(),glowTiles=[],dogs=[],eaten=new Set(),litSet=new Set(),ferries=[],ANIMAL={ga:1,co:1,trau:1,vit:1,voi:1},STALLS={quan:1,xebanhmi:1,xehutieu:1};
 const FOODS=[...new Set(BIOME.flatMap(b=>b.foods))];
 const cornerCol=(ci,cj)=>{const c=new THREE.Color(0,0,0);for(let a=-1;a<=0;a++)for(let b=-1;b<=0;b++)c.add(BIOME[biomeAt(ci+a,cj+b)].lin);return c.multiplyScalar(.25*(.9+.2*h2(ci,cj,7)))};
 
@@ -136,32 +136,37 @@ function makeTile(i,j){
   if(isPath){
     if((i===0&&j===0)||rnd()<(b===2?.4:.2)){const a0=rnd()*TAU;for(let k=0;k<8;k++){const a=a0+k*TAU/8,x=pc[0]+Math.cos(a)*.56,z=pc[1]+Math.sin(a)*.5,d=SPR.denlong_off.def;
         if(free(x,z,d)&&pathDist(x,z)>.36){items.push({x,z,r:.13});const lit=litSet.has(key),c=card(lit?'denlong_on':'denlong_off',x,z,{flip:1,yaw:0,s:1});t.lamp={c,x,z,lit,halo:null};if(lit)addHalo(t);break}}}
-    if(!(i===0&&j===0)&&rnd()<.45&&!eaten.has(key)){const kind=h2(i,j,41)<.55?'banhmi':pick(BIOME[b].foods),m=cardMesh(kind);m.position.set(pc[0]+(rnd()-.5)*.2,.1,pc[1]+(rnd()-.5)*.2);m.rotation.x=-.5;m.scale.setScalar(0);t.grp.add(m);t.pick={m,x:m.position.x,z:m.position.z,kind,ph:rnd()*6}}
+    if(!(i===0&&j===0)&&rnd()<.45&&!eaten.has(key)){const kind=h2(i,j,41)<.55?'banhmi':pick(BIOME[b].foods),m=cardMesh(kind);m.position.set(pc[0]+(rnd()-.5)*.2,.1,pc[1]+(rnd()-.5)*.2);m.rotation.x=-.5;m.scale.setScalar(0);t.grp.add(m);t.pick={m,x:m.position.x,z:m.position.z,kind,ph:rnd()*6,at:tileAnimTime}}
   }
   /* bến đò: ô đường mòn sát sông mà không có cầu thì đôi khi có thuyền đợi khách, bấm E để sang bờ bên kia */
-  if(isPath&&near&&!t.bridges.length&&!(i===0&&j===0)&&h2(i,j,77)<.2&&!(edgeH(i-1,j)&&wetSpan(ctr(i-1,j),pc))&&!(edgeH(i,j-1)&&wetSpan(ctr(i,j-1),ctr(i+1,j-1)))&&!(edgeH(i,j+1)&&wetSpan(ctr(i,j+1),ctr(i+1,j+1))))for(const k of [0,1,-1,2,-2]){const q0=riverInfo(pc[0],pc[1]),qx=pc[0]-q0.nz*k*.4,qz=pc[1]+q0.nx*k*.4,q=riverInfo(qx,qz),dd=q.d-RW;if(dd<-.1||dd>1.4)continue;
+  if(isPath&&near&&!t.bridges.length&&!(i===0&&j===0)&&h2(i,j,77)<.2&&!bridgeNear(i,j))for(const k of [0,1,-1,2,-2]){const q0=riverInfo(pc[0],pc[1]),qx=pc[0]-q0.nz*k*.4,qz=pc[1]+q0.nx*k*.4,q=riverInfo(qx,qz),dd=q.d-RW;if(dd<-.1||dd>1.4)continue;
     const ex=qx-q.nx*dd,ez=qz-q.nz*dd,sx=ex+q.nx*.45,sz=ez+q.nz*.45,bx=ex-q.nx*.3,bz=ez-q.nz*.3;
     if(Math.abs(sx-cx)>TS*.55||Math.abs(sz-cz)>TS*.55||riverD(sx,sz)<RW+.3||items.some(it=>Math.hypot(sx-it.x,sz-it.z)<it.r+.3))continue;
     let tx=-q.nz,tz=q.nx;if(tx<0){tx=-tx;tz=-tz}const ya=-Math.atan2(tz,tx),bc=card(b===1?'ghe':'thuyen',bx,bz,{block:false,flip:1,yaw:0,s:1}),jc=card('bendo',ex+q.nx*.12,ez+q.nz*.12,{block:false,flip:1,yaw:0,s:1});
     t.bob.push({m:bc.m,ph:rnd()*TAU});items.push({x:sx,z:sz,r:.2});t.ferry={t,bc,jc,sx,sz,bx,bz,dx:-q.nx,dz:-q.nz,far:null};ferries.push(t.ferry);break}
-  buildBlockers(t);scene.add(t.grp);tiles.set(key,t);return t;
+  buildBlockers(t);scene.add(t.grp);tiles.set(key,t);if(t.glowBr)glowTiles.push(t);return t;
 }
+/* có cầu trong vòng 2 ô ngang, 1 ô dọc thì không đặt bến đò (cầu nằm trên hàng j chia hết cho 4, nên bến đò rơi vào hàng giữa) */
+function bridgeNear(i,j){for(let a=-2;a<=2;a++)for(let b=-1;b<=1;b++)if(edgeH(i+a,j+b)&&wetSpan(ctr(i+a,j+b),ctr(i+a+1,j+b)))return true;return false}
 function addHalo(t){if(t.lamp.halo)return;const m=new THREE.Mesh(haloGeo,haloMat);m.position.set(t.lamp.x+.1,.02,t.lamp.z+.1);t.grp.add(m);t.lamp.halo=m;t.halos.push(m);m.visible=t.p>.6}
-function dropTile(t){scene.remove(t.grp);t.gg.dispose();if(t.dog){scene.remove(t.dog.m,t.dog.bub);dogs.splice(dogs.indexOf(t.dog),1)}tiles.delete(t.key)}
-function fold(t){const up=t.target===1;for(const c of t.cards){const q=clamp(t.p*(1+MAXD)-c.delay,0,1),e=up?backOut(q):smooth(q);c.m.rotation.x=-HALF*(1-e);if(c.cross)c.cross.rotation.y=HALF*smooth(q*2-1)}for(const hm of t.halos)hm.visible=t.p>.6}
-let firstFill=true,heading=[0,-1];
+function dropTile(t){scene.remove(t.grp);t.gg.dispose();if(t.dog){scene.remove(t.dog.m,t.dog.bub);const idx=dogs.indexOf(t.dog);if(idx>=0){dogs.copyWithin(idx,idx+1);dogs.pop()}}
+  if(t.glowBr){const idx=glowTiles.indexOf(t);if(idx>=0){glowTiles.copyWithin(idx,idx+1);glowTiles.pop()}}tiles.delete(t.key);if(!tiles.size){tileScanI=tileScanJ=NaN;tileScanPending=false;tileAnimTime=0}}
+function fold(t){const up=t.target===1;for(let idx=0;idx<t.cards.length;idx++){const c=t.cards[idx],q=clamp(t.p*(1+MAXD)-c.delay,0,1),e=up?backOut(q):smooth(q);c.m.rotation.x=-HALF*(1-e);if(c.cross)c.cross.rotation.y=HALF*smooth(q*2-1)}for(let idx=0;idx<t.halos.length;idx++)t.halos[idx].visible=t.p>.6}
+let firstFill=true,heading=[0,-1],tileScanI=NaN,tileScanJ=NaN,tileScanPending=false,tileAnimTime=0;
+const tileFrame={px:0,pz:0,rx:0,rz:0,dt:0};
+function updateTile(t){const {px,pz,rx,rz,dt}=tileFrame,dp=Math.hypot(t.i-px,t.j-pz);if(dp>RC+1.3){dropTile(t);return}
+  if(t.target===0){const d=Math.hypot(t.i-rx,t.j-rz);if(d<RR||dp<1.2){t.target=1;t.wait=firstFill?.25+d*.16:.05+Math.random()*.12}}
+  else if(t.target===1&&dp>1.6&&Math.hypot(t.i-rx,t.j-rz)>RF){t.target=0;t.wait=Math.random()*.15}
+  if(t.wait>0)t.wait-=dt;else if(t.p!==t.target){if(t.p===0&&t.cards.length)sfx.rustle();t.p=clamp(t.p+(t.target?dt/.9:-dt/.55),0,1);fold(t)}
+  const pk=t.pick;if(pk){const k=t.p>.9?1:0,s=pk.m.scale.x;if(k||s){if(s!==k)pk.m.scale.setScalar(clamp(s+(k?1:-1)*dt*5,0,1));pk.ph+=tileAnimTime-pk.at;pk.at=tileAnimTime;pk.m.position.y=.1+Math.sin(pk.ph*2.2)*.03;pk.m.rotation.z=Math.sin(pk.ph*1.6)*.2}}
+  if(t.p>.9)for(let idx=0;idx<t.bob.length;idx++){const b=t.bob[idx];b.m.position.y=.012+Math.sin(time*1.3+b.ph)*.012}
+}
 function updateTiles(dt){
-  const px=player.x/TS,pz=player.z/TS,pi=Math.round(px),pj=Math.round(pz);let budget=firstFill?999:4;
-  for(let dj=-6;dj<=6&&budget>0;dj++)for(let di=-6;di<=6&&budget>0;di++)if(di*di+dj*dj<=RC*RC&&!tiles.has((pi+di)+','+(pj+dj))){makeTile(pi+di,pj+dj);budget--}
-  const rx=px+heading[0]*.7,rz=pz-.2+heading[1]*.7;
-  tiles.forEach(t=>{const dp=Math.hypot(t.i-px,t.j-pz);if(dp>RC+1.3){dropTile(t);return}
-    const d=Math.hypot(t.i-rx,t.j-rz);
-    if(t.target===0&&(d<RR||dp<1.2)){t.target=1;t.wait=firstFill?.25+d*.16:.05+Math.random()*.12}
-    else if(t.target===1&&d>RF&&dp>1.6){t.target=0;t.wait=Math.random()*.15}
-    if(t.wait>0)t.wait-=dt;else if(t.p!==t.target){if(t.p===0&&t.cards.length)sfx.rustle();t.p=clamp(t.p+(t.target?dt/.9:-dt/.55),0,1);fold(t)}
-    if(t.pick){const k=t.p>.9?1:0,s=t.pick.m.scale.x,ns=clamp(s+(k?1:-1)*dt*5,0,1);t.pick.m.scale.setScalar(ns);t.pick.ph+=dt;t.pick.m.position.y=.1+Math.sin(t.pick.ph*2.2)*.03;t.pick.m.rotation.z=Math.sin(t.pick.ph*1.6)*.2}
-    if(t.p>.9)for(const b of t.bob)b.m.position.y=.012+Math.sin(time*1.3+b.ph)*.012;
-  });firstFill=false;
+  const px=player.x/TS,pz=player.z/TS,pi=Math.round(px),pj=Math.round(pz);
+  if(firstFill||pi!==tileScanI||pj!==tileScanJ||tileScanPending){tileScanI=pi;tileScanJ=pj;tileScanPending=false;let budget=firstFill?999:4;
+    scan:for(let dj=-6;dj<=6;dj++)for(let di=-6;di<=6;di++)if(di*di+dj*dj<=RC*RC&&!tiles.has((pi+di)+','+(pj+dj))){if(!budget){tileScanPending=true;break scan}makeTile(pi+di,pj+dj);budget--}}
+  tileFrame.px=px;tileFrame.pz=pz;tileFrame.rx=px+heading[0]*.7;tileFrame.rz=pz-.2+heading[1]*.7;tileFrame.dt=dt;tileAnimTime+=dt;
+  tiles.forEach(updateTile);firstFill=false;
 }
 function blockersNear(x,z,f){const i=Math.round(x/TS),j=Math.round(z/TS);for(let a=-1;a<=1;a++)for(let b=-1;b<=1;b++){const t=tiles.get((i+a)+','+(j+b));if(t&&t.p>.4)for(const k of t.blockers)f(k)}}
 function bridgeAt(x,z,pad){const i=Math.round(x/TS),j=Math.round(z/TS);for(let a=-1;a<=1;a++)for(let b=-1;b<=1;b++){const t=tiles.get((i+a)+','+(j+b));if(t)for(const B of t.bridges){const dx=x-B.x0,dz=z-B.z0,u=(dx*B.ux+dz*B.uz)/B.len,s=-dx*B.uz+dz*B.ux;if(u>=0&&u<=1&&Math.abs(s)<=B.hw+pad)return {B,u,s}}}return null}
