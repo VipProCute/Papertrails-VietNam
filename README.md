@@ -22,6 +22,11 @@ Mở thẳng `index.html` bằng cách bấm đúp cũng chơi được, nhưng 
 | Bật tắt hậu kỳ | P |
 | Bật tắt tiếng | M |
 | Hiện khung va chạm (kiểm lỗi) | H |
+| Sổ tem | J |
+| Bản đồ | Tab hoặc B |
+| Chụp bưu thiếp | C |
+| Đổi góc nhìn | V |
+| Cưỡi trâu, voi; qua đò | E |
 
 ## Sông và cầu
 
@@ -40,7 +45,10 @@ Mỗi vật chặn đường theo đúng phần chân của hình vẽ: game đo
 
 ## Cấu trúc
 
-    index.html              toàn bộ game (Three.js r128 nạp từ CDN)
+    index.html              khung trang, giao diện, CSS (Three.js r128 nạp từ CDN)
+    src/                    mã game, nạp theo thứ tự ghi trong index.html, dùng chung một phạm vi toàn cục
+    assets/audio/           nhạc: <vùng>_day.mp3, <vùng>_night.mp3 (vùng: dbsh, tb, ntb, tn, dnb, tnb); thiếu thì dùng day.mp3 / night.mp3
+    assets/audio/sfx/       tiếng động CC0 + manifest.json + CREDITS.md
     assets/sprites/         tranh thay thế + manifest.json (game tự nạp nếu có)
     art/reference/          hình hiện tại của từng vật, dùng làm ảnh tham khảo
     art/sprites.json        kích thước ô của từng hình
