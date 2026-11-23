@@ -1,0 +1,482 @@
+{
+  "tre": {
+    "status": "ok",
+    "strategy": "edits",
+    "model": "gpt-image-2.6",
+    "ms": 26489,
+    "error": "",
+    "time": "2026-11-21T21:20:26.692Z"
+  },
+  "chuoi": {
+    "status": "ok",
+    "strategy": "edits",
+    "model": "gpt-image-2.6",
+    "ms": 43841,
+    "error": "",
+    "time": "2026-11-21T21:20:44.066Z"
+  },
+  "cau": {
+    "status": "ok",
+    "strategy": "edits",
+    "model": "gpt-image-2.6",
+    "ms": 25168,
+    "error": "",
+    "time": "2026-11-21T21:20:51.867Z"
+  },
+  "dua": {
+    "status": "ok",
+    "strategy": "edits",
+    "model": "gpt-image-2.6",
+    "ms": 31792,
+    "error": "",
+    "time": "2026-11-21T21:21:15.859Z"
+  },
+  "da": {
+    "status": "ok",
+    "strategy": "edits",
+    "model": "gpt-image-2.6",
+    "ms": 48020,
+    "error": "",
+    "time": "2026-11-21T21:21:39.888Z"
+  },
+  "dao": {
+    "status": "ok",
+    "strategy": "edits",
+    "model": "gpt-image-2.6",
+    "ms": 42546,
+    "error": "",
+    "time": "2026-11-21T21:21:58.406Z"
+  },
+  "thong": {
+    "status": "ok",
+    "strategy": "edits",
+    "model": "gpt-image-2.6",
+    "ms": 34756,
+    "error": "",
+    "time": "2026-11-21T21:22:14.646Z"
+  },
+  "bui": {
+    "status": "ok",
+    "strategy": "edits",
+    "model": "gpt-image-2.6",
+    "ms": 29090,
+    "error": "",
+    "time": "2026-11-21T21:22:27.498Z"
+  },
+  "hoagiay": {
+    "status": "ok",
+    "strategy": "edits",
+    "model": "gpt-image-2.6",
+    "ms": 41692,
+    "error": "",
+    "time": "2026-11-21T21:22:56.339Z"
+  },
+  "lau": {
+    "status": "ok",
+    "strategy": "edits",
+    "model": "gpt-image-2.6",
+    "ms": 30701,
+    "error": "",
+    "time": "2026-11-21T21:22:58.200Z"
+  },
+  "che": {
+    "status": "ok",
+    "strategy": "edits",
+    "model": "gpt-image-2.6",
+    "ms": 30256,
+    "error": "",
+    "time": "2026-11-21T21:23:26.596Z"
+  },
+  "sen": {
+    "status": "ok",
+    "strategy": "edits",
+    "model": "gpt-image-2.6",
+    "ms": 35246,
+    "error": "",
+    "time": "2026-11-21T21:23:33.447Z"
+  },
+  "lua": {
+    "status": "ok",
+    "strategy": "edits",
+    "model": "gpt-image-2.6",
+    "ms": 17048,
+    "error": "",
+    "time": "2026-11-21T21:23:43.645Z"
+  },
+  "luavang": {
+    "status": "ok",
+    "strategy": "edits",
+    "model": "gpt-image-2.6",
+    "ms": 18040,
+    "error": "",
+    "time": "2026-11-21T21:23:51.488Z"
+  },
+  "datang": {
+    "status": "ok",
+    "strategy": "edits",
+    "model": "gpt-image-2.6",
+    "ms": 33954,
+    "error": "",
+    "time": "2026-11-21T21:24:17.600Z"
+  },
+  "rom": {
+    "status": "ok",
+    "strategy": "edits",
+    "model": "gpt-image-2.6",
+    "ms": 38338,
+    "error": "",
+    "time": "2026-11-21T21:24:29.827Z"
+  },
+  "chum": {
+    "status": "ok",
+    "strategy": "edits",
+    "model": "gpt-image-2.6",
+    "ms": 37754,
+    "error": "",
+    "time": "2026-11-21T21:24:55.359Z"
+  },
+  "gieng": {
+    "status": "ok",
+    "strategy": "edits",
+    "model": "gpt-image-2.6",
+    "ms": 42369,
+    "error": "",
+    "time": "2026-11-21T21:25:12.197Z"
+  },
+  "cotdien": {
+    "status": "ok",
+    "strategy": "edits",
+    "model": "gpt-image-2.6",
+    "ms": 35038,
+    "error": "",
+    "time": "2026-11-21T21:25:30.398Z"
+  },
+  "denlong_off": {
+    "status": "ok",
+    "strategy": "edits",
+    "model": "gpt-image-2.6",
+    "ms": 31893,
+    "error": "",
+    "time": "2026-11-21T21:25:44.092Z"
+  },
+  "denlong_on": {
+    "status": "ok",
+    "strategy": "edits",
+    "model": "gpt-image-2.6",
+    "ms": 27037,
+    "error": "",
+    "time": "2026-11-21T21:25:57.436Z"
+  },
+  "cotmoc": {
+    "status": "ok",
+    "strategy": "edits",
+    "model": "gpt-image-2.6",
+    "ms": 38975,
+    "error": "",
+    "time": "2026-11-21T21:26:23.069Z"
+  },
+  "bunhin": {
+    "status": "ok",
+    "strategy": "edits",
+    "model": "gpt-image-2.6",
+    "ms": 36605,
+    "error": "",
+    "time": "2026-11-21T21:26:34.042Z"
+  },
+  "quan": {
+    "status": "ok",
+    "strategy": "edits",
+    "model": "gpt-image-2.6",
+    "ms": 39603,
+    "error": "",
+    "time": "2026-11-21T21:27:02.674Z"
+  },
+  "xebanhmi": {
+    "status": "ok",
+    "strategy": "edits",
+    "model": "gpt-image-2.6",
+    "ms": 46150,
+    "error": "",
+    "time": "2026-11-21T21:27:20.194Z"
+  },
+  "xuong": {
+    "status": "ok",
+    "strategy": "edits",
+    "model": "gpt-image-2.6",
+    "ms": 27043,
+    "error": "",
+    "time": "2026-11-21T21:27:29.718Z"
+  },
+  "nhangoi": {
+    "status": "ok",
+    "strategy": "edits",
+    "model": "gpt-image-2.6",
+    "ms": 30976,
+    "error": "",
+    "time": "2026-11-21T21:27:51.172Z"
+  },
+  "nhala": {
+    "status": "ok",
+    "strategy": "edits",
+    "model": "gpt-image-2.6",
+    "ms": 39998,
+    "error": "",
+    "time": "2026-11-21T21:28:09.717Z"
+  },
+  "nhapho": {
+    "status": "ok",
+    "strategy": "edits",
+    "model": "gpt-image-2.6",
+    "ms": 30336,
+    "error": "",
+    "time": "2026-11-21T21:28:21.509Z"
+  },
+  "nhasan": {
+    "status": "ok",
+    "strategy": "edits",
+    "model": "gpt-image-2.6",
+    "ms": 40848,
+    "error": "",
+    "time": "2026-11-21T21:28:50.566Z"
+  },
+  "dinh": {
+    "status": "ok",
+    "strategy": "edits",
+    "model": "gpt-image-2.6",
+    "ms": 41421,
+    "error": "",
+    "time": "2026-11-21T21:29:02.931Z"
+  },
+  "conglang": {
+    "status": "ok",
+    "strategy": "edits",
+    "model": "gpt-image-2.6",
+    "ms": 27790,
+    "error": "",
+    "time": "2026-11-21T21:29:18.357Z"
+  },
+  "trau": {
+    "status": "ok",
+    "strategy": "edits",
+    "model": "gpt-image-2.6",
+    "ms": 27177,
+    "error": "",
+    "time": "2026-11-21T21:29:30.109Z"
+  },
+  "co": {
+    "status": "ok",
+    "strategy": "edits",
+    "model": "gpt-image-2.6",
+    "ms": 35052,
+    "error": "",
+    "time": "2026-11-21T21:29:53.410Z"
+  },
+  "ga": {
+    "status": "ok",
+    "strategy": "edits",
+    "model": "gpt-image-2.6",
+    "ms": 39872,
+    "error": "",
+    "time": "2026-11-21T21:30:09.983Z"
+  },
+  "cho_sit": {
+    "status": "ok",
+    "strategy": "edits",
+    "model": "gpt-image-2.6",
+    "ms": 33694,
+    "error": "",
+    "time": "2026-11-21T21:30:27.105Z"
+  },
+  "cho_run1": {
+    "status": "ok",
+    "strategy": "edits",
+    "model": "gpt-image-2.6",
+    "ms": 37487,
+    "error": "",
+    "time": "2026-11-21T21:30:47.471Z"
+  },
+  "cho_run2": {
+    "status": "ok",
+    "strategy": "edits",
+    "model": "gpt-image-2.6",
+    "ms": 33783,
+    "error": "",
+    "time": "2026-11-21T21:31:00.889Z"
+  },
+  "k_idle": {
+    "status": "ok",
+    "strategy": "edits",
+    "model": "gpt-image-2.6",
+    "ms": 29640,
+    "error": "",
+    "time": "2026-11-21T21:31:17.112Z"
+  },
+  "k_w1": {
+    "status": "ok",
+    "strategy": "edits",
+    "model": "gpt-image-2.6",
+    "ms": 34595,
+    "error": "",
+    "time": "2026-11-21T21:31:35.485Z"
+  },
+  "k_w2": {
+    "status": "ok",
+    "strategy": "edits",
+    "model": "gpt-image-2.6",
+    "ms": 40078,
+    "error": "",
+    "time": "2026-11-21T21:31:57.192Z"
+  },
+  "xm_side": {
+    "status": "ok",
+    "strategy": "edits",
+    "model": "gpt-image-2.6",
+    "ms": 40495,
+    "error": "",
+    "time": "2026-11-21T21:32:15.981Z"
+  },
+  "xm_front": {
+    "status": "ok",
+    "strategy": "edits",
+    "model": "gpt-image-2.6",
+    "ms": 38645,
+    "error": "",
+    "time": "2026-11-21T21:32:35.839Z"
+  },
+  "xm_back": {
+    "status": "ok",
+    "strategy": "edits",
+    "model": "gpt-image-2.6",
+    "ms": 38028,
+    "error": "",
+    "time": "2026-11-21T21:32:54.013Z"
+  },
+  "banhmi": {
+    "status": "ok",
+    "strategy": "edits",
+    "model": "gpt-image-2.6",
+    "ms": 44141,
+    "error": "",
+    "time": "2026-11-21T21:33:19.981Z"
+  },
+  "pho": {
+    "status": "ok",
+    "strategy": "edits",
+    "model": "gpt-image-2.6",
+    "ms": 39166,
+    "error": "",
+    "time": "2026-11-21T21:33:33.180Z"
+  },
+  "caphe": {
+    "status": "ok",
+    "strategy": "edits",
+    "model": "gpt-image-2.6",
+    "ms": 37526,
+    "error": "",
+    "time": "2026-11-21T21:33:57.511Z"
+  },
+  "banhchung": {
+    "status": "ok",
+    "strategy": "edits",
+    "model": "gpt-image-2.6",
+    "ms": 38209,
+    "error": "",
+    "time": "2026-11-21T21:34:11.390Z"
+  },
+  "ruong": {
+    "status": "ok",
+    "strategy": "edits",
+    "model": "gpt-image-2.6",
+    "ms": 45230,
+    "error": "",
+    "time": "2026-11-21T21:34:42.743Z"
+  },
+  "ruongvang": {
+    "status": "ok",
+    "strategy": "edits",
+    "model": "gpt-image-2.6",
+    "ms": 43180,
+    "error": "",
+    "time": "2026-11-21T21:34:54.573Z"
+  },
+  "bacthang": {
+    "status": "ok",
+    "strategy": "edits",
+    "model": "gpt-image-2.6",
+    "ms": 43952,
+    "error": "",
+    "time": "2026-11-21T21:35:26.696Z"
+  },
+  "ao": {
+    "status": "ok",
+    "strategy": "edits",
+    "model": "gpt-image-2.6",
+    "ms": 46973,
+    "error": "",
+    "time": "2026-11-21T21:35:41.550Z"
+  },
+  "san": {
+    "status": "ok",
+    "strategy": "edits",
+    "model": "gpt-image-2.6",
+    "ms": 42713,
+    "error": "",
+    "time": "2026-11-21T21:36:09.410Z"
+  },
+  "duong": {
+    "status": "ok",
+    "strategy": "edits",
+    "model": "gpt-image-2.6",
+    "ms": 33822,
+    "error": "",
+    "time": "2026-11-21T21:36:15.375Z"
+  },
+  "cau_dua": {
+    "status": "ok",
+    "strategy": "generations",
+    "model": "gpt-image-2.6",
+    "ms": 20091,
+    "error": "",
+    "time": "2026-11-22T02:00:08.238Z"
+  },
+  "chua_cau": {
+    "status": "ok",
+    "strategy": "generations",
+    "model": "gpt-image-2.6",
+    "ms": 25014,
+    "error": "",
+    "time": "2026-11-22T02:00:13.153Z"
+  },
+  "cau_ngoi": {
+    "status": "ok",
+    "strategy": "generations",
+    "model": "gpt-image-2.6",
+    "ms": 25421,
+    "error": "",
+    "time": "2026-11-22T02:00:13.566Z"
+  },
+  "cau_treo": {
+    "status": "ok",
+    "strategy": "generations",
+    "model": "gpt-image-2.6",
+    "ms": 19240,
+    "error": "",
+    "time": "2026-11-22T02:00:27.484Z"
+  },
+  "thuyen": {
+    "status": "ok",
+    "strategy": "generations",
+    "model": "gpt-image-2.6",
+    "ms": 19600,
+    "error": "",
+    "time": "2026-11-22T02:00:32.754Z"
+  },
+  "lucbinh": {
+    "status": "ok",
+    "strategy": "generations",
+    "model": "gpt-image-2.6",
+    "ms": 25126,
+    "error": "",
+    "time": "2026-11-22T02:00:38.693Z"
+  }
+}

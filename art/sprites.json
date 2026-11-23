@@ -1,0 +1,578 @@
+{
+ "cotdien": {
+  "w": 150,
+  "h": 370,
+  "pad": 7,
+  "worldH": 1.95,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "cau": {
+  "w": 130,
+  "h": 350,
+  "pad": 7,
+  "worldH": 1.75,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "dua": {
+  "w": 250,
+  "h": 350,
+  "pad": 7,
+  "worldH": 1.75,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "nhapho": {
+  "w": 310,
+  "h": 350,
+  "pad": 7,
+  "worldH": 1.65,
+  "flat": false,
+  "noEdge": false,
+  "glow": true
+ },
+ "da": {
+  "w": 380,
+  "h": 330,
+  "pad": 7,
+  "worldH": 1.75,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "dinh": {
+  "w": 480,
+  "h": 330,
+  "pad": 7,
+  "worldH": 1.7,
+  "flat": false,
+  "noEdge": false,
+  "glow": true
+ },
+ "tre": {
+  "w": 210,
+  "h": 310,
+  "pad": 7,
+  "worldH": 1.55,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "thong": {
+  "w": 190,
+  "h": 310,
+  "pad": 7,
+  "worldH": 1.5,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "conglang": {
+  "w": 370,
+  "h": 310,
+  "pad": 7,
+  "worldH": 1.55,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "nhasan": {
+  "w": 370,
+  "h": 290,
+  "pad": 7,
+  "worldH": 1.32,
+  "flat": false,
+  "noEdge": false,
+  "glow": true
+ },
+ "dao": {
+  "w": 250,
+  "h": 270,
+  "pad": 7,
+  "worldH": 1.25,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "nhangoi": {
+  "w": 400,
+  "h": 270,
+  "pad": 7,
+  "worldH": 1.3,
+  "flat": false,
+  "noEdge": false,
+  "glow": true
+ },
+ "xm_side": {
+  "w": 330,
+  "h": 260,
+  "pad": 7,
+  "worldH": 0.9,
+  "flat": false,
+  "noEdge": false,
+  "glow": true
+ },
+ "xm_front": {
+  "w": 200,
+  "h": 260,
+  "pad": 7,
+  "worldH": 0.9,
+  "flat": false,
+  "noEdge": false,
+  "glow": true
+ },
+ "xm_back": {
+  "w": 200,
+  "h": 260,
+  "pad": 7,
+  "worldH": 0.9,
+  "flat": false,
+  "noEdge": false,
+  "glow": true
+ },
+ "ruong": {
+  "w": 260,
+  "h": 260,
+  "pad": 7,
+  "worldH": 1,
+  "flat": true,
+  "noEdge": false,
+  "glow": false
+ },
+ "ruongvang": {
+  "w": 260,
+  "h": 260,
+  "pad": 7,
+  "worldH": 1,
+  "flat": true,
+  "noEdge": false,
+  "glow": false
+ },
+ "bacthang": {
+  "w": 260,
+  "h": 260,
+  "pad": 7,
+  "worldH": 1,
+  "flat": true,
+  "noEdge": false,
+  "glow": false
+ },
+ "ao": {
+  "w": 260,
+  "h": 260,
+  "pad": 7,
+  "worldH": 1,
+  "flat": true,
+  "noEdge": false,
+  "glow": false
+ },
+ "san": {
+  "w": 260,
+  "h": 260,
+  "pad": 7,
+  "worldH": 1,
+  "flat": true,
+  "noEdge": true,
+  "glow": false
+ },
+ "chuoi": {
+  "w": 220,
+  "h": 250,
+  "pad": 7,
+  "worldH": 1.05,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "denlong_off": {
+  "w": 116,
+  "h": 250,
+  "pad": 7,
+  "worldH": 0.92,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "denlong_on": {
+  "w": 116,
+  "h": 250,
+  "pad": 7,
+  "worldH": 0.92,
+  "flat": false,
+  "noEdge": false,
+  "glow": true
+ },
+ "nhala": {
+  "w": 350,
+  "h": 250,
+  "pad": 7,
+  "worldH": 1.12,
+  "flat": false,
+  "noEdge": false,
+  "glow": true
+ },
+ "xebanhmi": {
+  "w": 230,
+  "h": 230,
+  "pad": 7,
+  "worldH": 0.9,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "k_idle": {
+  "w": 134,
+  "h": 216,
+  "pad": 7,
+  "worldH": 0.72,
+  "flat": false,
+  "noEdge": false,
+  "glow": true
+ },
+ "k_w1": {
+  "w": 134,
+  "h": 216,
+  "pad": 7,
+  "worldH": 0.72,
+  "flat": false,
+  "noEdge": false,
+  "glow": true
+ },
+ "k_w2": {
+  "w": 134,
+  "h": 216,
+  "pad": 7,
+  "worldH": 0.72,
+  "flat": false,
+  "noEdge": false,
+  "glow": true
+ },
+ "rom": {
+  "w": 170,
+  "h": 210,
+  "pad": 7,
+  "worldH": 0.82,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "bunhin": {
+  "w": 150,
+  "h": 210,
+  "pad": 7,
+  "worldH": 0.78,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "quan": {
+  "w": 270,
+  "h": 210,
+  "pad": 7,
+  "worldH": 0.84,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "trau": {
+  "w": 270,
+  "h": 200,
+  "pad": 7,
+  "worldH": 0.72,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "hoagiay": {
+  "w": 200,
+  "h": 150,
+  "pad": 7,
+  "worldH": 0.56,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "gieng": {
+  "w": 160,
+  "h": 136,
+  "pad": 7,
+  "worldH": 0.46,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "cho_sit": {
+  "w": 164,
+  "h": 124,
+  "pad": 7,
+  "worldH": 0.36,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "cho_run1": {
+  "w": 164,
+  "h": 124,
+  "pad": 7,
+  "worldH": 0.36,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "cho_run2": {
+  "w": 164,
+  "h": 124,
+  "pad": 7,
+  "worldH": 0.36,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "co": {
+  "w": 86,
+  "h": 116,
+  "pad": 7,
+  "worldH": 0.36,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "duongtron": {
+  "w": 110,
+  "h": 110,
+  "pad": 7,
+  "worldH": 1,
+  "flat": true,
+  "noEdge": true,
+  "glow": false
+ },
+ "datang": {
+  "w": 160,
+  "h": 104,
+  "pad": 7,
+  "worldH": 0.36,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "bui": {
+  "w": 170,
+  "h": 96,
+  "pad": 7,
+  "worldH": 0.34,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "sen": {
+  "w": 120,
+  "h": 96,
+  "pad": 7,
+  "worldH": 0.3,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "chum": {
+  "w": 84,
+  "h": 96,
+  "pad": 7,
+  "worldH": 0.3,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "banhmi": {
+  "w": 96,
+  "h": 96,
+  "pad": 7,
+  "worldH": 0.25,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "pho": {
+  "w": 96,
+  "h": 96,
+  "pad": 7,
+  "worldH": 0.25,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "caphe": {
+  "w": 96,
+  "h": 96,
+  "pad": 7,
+  "worldH": 0.25,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "banhchung": {
+  "w": 96,
+  "h": 96,
+  "pad": 7,
+  "worldH": 0.25,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "gau": {
+  "w": 140,
+  "h": 96,
+  "pad": 7,
+  "worldH": 0.42,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "bip": {
+  "w": 190,
+  "h": 96,
+  "pad": 7,
+  "worldH": 0.46,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "che": {
+  "w": 230,
+  "h": 84,
+  "pad": 7,
+  "worldH": 0.3,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "cotmoc": {
+  "w": 74,
+  "h": 84,
+  "pad": 7,
+  "worldH": 0.28,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "xuong": {
+  "w": 230,
+  "h": 84,
+  "pad": 7,
+  "worldH": 0.3,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "lau": {
+  "w": 110,
+  "h": 76,
+  "pad": 7,
+  "worldH": 0.26,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "ga": {
+  "w": 76,
+  "h": 76,
+  "pad": 7,
+  "worldH": 0.2,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "duong": {
+  "w": 140,
+  "h": 70,
+  "pad": 7,
+  "worldH": 1,
+  "flat": true,
+  "noEdge": true,
+  "glow": false
+ },
+ "lua": {
+  "w": 370,
+  "h": 62,
+  "pad": 7,
+  "worldH": 0.22,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "luavang": {
+  "w": 370,
+  "h": 62,
+  "pad": 7,
+  "worldH": 0.22,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "bui_khoi": {
+  "w": 44,
+  "h": 44,
+  "pad": 7,
+  "worldH": 0.14,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "chua_cau": {
+  "w": 480,
+  "h": 160,
+  "pad": 7,
+  "worldH": 0.8,
+  "flat": false,
+  "noEdge": false,
+  "glow": true
+ },
+ "cau_ngoi": {
+  "w": 480,
+  "h": 160,
+  "pad": 7,
+  "worldH": 0.8,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "cau_dua": {
+  "w": 480,
+  "h": 160,
+  "pad": 7,
+  "worldH": 0.75,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "cau_treo": {
+  "w": 480,
+  "h": 160,
+  "pad": 7,
+  "worldH": 0.8,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "thuyen": {
+  "w": 300,
+  "h": 100,
+  "pad": 7,
+  "worldH": 0.35,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "lucbinh": {
+  "w": 120,
+  "h": 110,
+  "pad": 7,
+  "worldH": 0.3,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ }
+}

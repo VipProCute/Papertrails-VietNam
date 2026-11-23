@@ -1,0 +1,11 @@
+node_modules/
+.env
+.env.local
+.vercel/
+art/generated/_raw/
+
+.vercel
+SKILL.md
+.claude/
+art/*.tar
+art/_review/

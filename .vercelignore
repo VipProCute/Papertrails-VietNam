@@ -1,0 +1,9 @@
+art
+tools
+node_modules
+*.bat
+.env*
+README.md
+SKILL.md
+assets/sprites/*.png
+.claude

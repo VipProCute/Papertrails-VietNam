@@ -1,0 +1,194 @@
+{
+ "sprites": {
+  "ao": {
+   "file": "ao.webp"
+  },
+  "bacthang": {
+   "file": "bacthang.webp"
+  },
+  "banhchung": {
+   "file": "banhchung.webp"
+  },
+  "banhmi": {
+   "file": "banhmi.webp"
+  },
+  "bui": {
+   "file": "bui.webp"
+  },
+  "bunhin": {
+   "file": "bunhin.webp"
+  },
+  "caphe": {
+   "file": "caphe.webp"
+  },
+  "cau": {
+   "file": "cau.webp"
+  },
+  "che": {
+   "file": "che.webp"
+  },
+  "cho_run1": {
+   "file": "cho_run1.webp"
+  },
+  "cho_run2": {
+   "file": "cho_run2.webp"
+  },
+  "cho_sit": {
+   "file": "cho_sit.webp"
+  },
+  "chum": {
+   "file": "chum.webp"
+  },
+  "chuoi": {
+   "file": "chuoi.webp"
+  },
+  "co": {
+   "file": "co.webp"
+  },
+  "conglang": {
+   "file": "conglang.webp"
+  },
+  "cotdien": {
+   "file": "cotdien.webp"
+  },
+  "cotmoc": {
+   "file": "cotmoc.webp"
+  },
+  "da": {
+   "file": "da.webp"
+  },
+  "dao": {
+   "file": "dao.webp"
+  },
+  "datang": {
+   "file": "datang.webp"
+  },
+  "denlong_off": {
+   "file": "denlong_off.webp"
+  },
+  "denlong_on": {
+   "file": "denlong_on.webp",
+   "glow": "denlong_on.glow.webp"
+  },
+  "dinh": {
+   "file": "dinh.webp",
+   "glow": "dinh.glow.webp"
+  },
+  "dua": {
+   "file": "dua.webp"
+  },
+  "ga": {
+   "file": "ga.webp"
+  },
+  "gieng": {
+   "file": "gieng.webp"
+  },
+  "hoagiay": {
+   "file": "hoagiay.webp"
+  },
+  "k_idle": {
+   "file": "k_idle.webp",
+   "glow": "k_idle.glow.webp"
+  },
+  "k_w1": {
+   "file": "k_w1.webp",
+   "glow": "k_w1.glow.webp"
+  },
+  "k_w2": {
+   "file": "k_w2.webp",
+   "glow": "k_w2.glow.webp"
+  },
+  "lau": {
+   "file": "lau.webp"
+  },
+  "lua": {
+   "file": "lua.webp"
+  },
+  "luavang": {
+   "file": "luavang.webp"
+  },
+  "nhala": {
+   "file": "nhala.webp",
+   "glow": "nhala.glow.webp"
+  },
+  "nhangoi": {
+   "file": "nhangoi.webp",
+   "glow": "nhangoi.glow.webp"
+  },
+  "nhapho": {
+   "file": "nhapho.webp",
+   "glow": "nhapho.glow.webp"
+  },
+  "nhasan": {
+   "file": "nhasan.webp",
+   "glow": "nhasan.glow.webp"
+  },
+  "pho": {
+   "file": "pho.webp"
+  },
+  "quan": {
+   "file": "quan.webp"
+  },
+  "rom": {
+   "file": "rom.webp"
+  },
+  "ruong": {
+   "file": "ruong.webp"
+  },
+  "ruongvang": {
+   "file": "ruongvang.webp"
+  },
+  "san": {
+   "file": "san.webp"
+  },
+  "sen": {
+   "file": "sen.webp"
+  },
+  "thong": {
+   "file": "thong.webp"
+  },
+  "trau": {
+   "file": "trau.webp"
+  },
+  "tre": {
+   "file": "tre.webp"
+  },
+  "xebanhmi": {
+   "file": "xebanhmi.webp"
+  },
+  "xm_back": {
+   "file": "xm_back.webp",
+   "glow": "xm_back.glow.webp"
+  },
+  "xm_front": {
+   "file": "xm_front.webp",
+   "glow": "xm_front.glow.webp"
+  },
+  "xm_side": {
+   "file": "xm_side.webp",
+   "glow": "xm_side.glow.webp"
+  },
+  "xuong": {
+   "file": "xuong.webp"
+  },
+  "chua_cau": {
+   "file": "chua_cau.webp",
+   "glow": "chua_cau.glow.webp"
+  },
+  "cau_ngoi": {
+   "file": "cau_ngoi.webp"
+  },
+  "cau_dua": {
+   "file": "cau_dua.webp"
+  },
+  "cau_treo": {
+   "file": "cau_treo.webp"
+  },
+  "thuyen": {
+   "file": "thuyen.webp"
+  },
+  "lucbinh": {
+   "file": "lucbinh.webp"
+  }
+ }
+}
