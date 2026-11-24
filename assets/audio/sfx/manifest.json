@@ -1,0 +1,115 @@
+{
+ "sounds": {
+  "step_dirt": [
+   "step_dirt_1.mp3",
+   "step_dirt_2.mp3",
+   "step_dirt_3.mp3",
+   "step_dirt_4.mp3"
+  ],
+  "step_grass": [
+   "step_grass_1.mp3",
+   "step_grass_2.mp3"
+  ],
+  "step_wood": [
+   "step_wood_1.mp3",
+   "step_wood_2.mp3",
+   "step_wood_3.mp3"
+  ],
+  "step_paddy": [
+   "step_paddy_1.mp3",
+   "step_paddy_2.mp3",
+   "step_paddy_3.mp3"
+  ],
+  "dog_bark": [
+   "dog_bark_1.mp3",
+   "dog_bark_2.mp3",
+   "dog_bark_3.mp3"
+  ],
+  "dog_growl": [
+   "dog_growl_1.mp3"
+  ],
+  "horn": [
+   "horn_1.mp3"
+  ],
+  "flap": [
+   "flap_1.mp3"
+  ],
+  "bell": [
+   "bell_1.mp3"
+  ],
+  "gong": [
+   "gong_1.mp3",
+   "gong_2.mp3"
+  ],
+  "woodblock": [
+   "woodblock_1.mp3",
+   "woodblock_2.mp3",
+   "woodblock_3.mp3"
+  ],
+  "chime": [
+   "chime_1.mp3"
+  ],
+  "paper": [
+   "paper_1.mp3",
+   "paper_2.mp3",
+   "paper_3.mp3"
+  ],
+  "page": [
+   "page_1.mp3",
+   "page_2.mp3",
+   "page_3.mp3"
+  ],
+  "stamp": [
+   "stamp_1.mp3",
+   "stamp_2.mp3"
+  ],
+  "pickup": [
+   "pickup_1.mp3",
+   "pickup_2.mp3"
+  ],
+  "coin": [
+   "coin_1.mp3",
+   "coin_2.mp3",
+   "coin_3.mp3"
+  ],
+  "shutter": [
+   "shutter_1.mp3",
+   "shutter_2.mp3"
+  ],
+  "success": [
+   "success_1.mp3"
+  ],
+  "splash": [
+   "splash_1.mp3",
+   "splash_2.mp3",
+   "splash_3.mp3"
+  ],
+  "amb_frogs": [
+   "amb_frogs.mp3"
+  ],
+  "amb_crickets": [
+   "amb_crickets.mp3"
+  ],
+  "amb_birds": [
+   "amb_birds.mp3"
+  ],
+  "amb_river": [
+   "amb_river.mp3"
+  ],
+  "amb_rain": [
+   "amb_rain.mp3"
+  ],
+  "amb_market": [
+   "amb_market.mp3"
+  ],
+  "amb_waves": [
+   "amb_waves.mp3"
+  ],
+  "amb_wind": [
+   "amb_wind.mp3"
+  ],
+  "rooster": [
+   "rooster_1.ogg"
+  ]
+ }
+}

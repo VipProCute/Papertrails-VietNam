@@ -574,5 +574,230 @@
   "flat": false,
   "noEdge": false,
   "glow": false
+ },
+ "caooc": {
+  "w": 240,
+  "h": 520,
+  "pad": 7,
+  "worldH": 2.5,
+  "flat": false,
+  "noEdge": false,
+  "glow": true
+ },
+ "nharong": {
+  "w": 300,
+  "h": 420,
+  "pad": 7,
+  "worldH": 2,
+  "flat": false,
+  "noEdge": false,
+  "glow": true
+ },
+ "nhaong": {
+  "w": 220,
+  "h": 420,
+  "pad": 7,
+  "worldH": 1.95,
+  "flat": false,
+  "noEdge": false,
+  "glow": true
+ },
+ "thapcham": {
+  "w": 240,
+  "h": 400,
+  "pad": 7,
+  "worldH": 1.9,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "cay_caosu": {
+  "w": 170,
+  "h": 330,
+  "pad": 7,
+  "worldH": 1.6,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "denduong": {
+  "w": 110,
+  "h": 330,
+  "pad": 7,
+  "worldH": 1.6,
+  "flat": false,
+  "noEdge": false,
+  "glow": true
+ },
+ "cayxoai": {
+  "w": 260,
+  "h": 300,
+  "pad": 7,
+  "worldH": 1.4,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "ray_caphe": {
+  "w": 260,
+  "h": 260,
+  "pad": 7,
+  "worldH": 1,
+  "flat": true,
+  "noEdge": false,
+  "glow": false
+ },
+ "duong_nhua": {
+  "w": 260,
+  "h": 260,
+  "pad": 7,
+  "worldH": 1,
+  "flat": true,
+  "noEdge": true,
+  "glow": false
+ },
+ "voi": {
+  "w": 330,
+  "h": 250,
+  "pad": 7,
+  "worldH": 0.95,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "xehutieu": {
+  "w": 230,
+  "h": 230,
+  "pad": 7,
+  "worldH": 0.9,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "congchieng": {
+  "w": 260,
+  "h": 180,
+  "pad": 7,
+  "worldH": 0.7,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "cau_sat": {
+  "w": 480,
+  "h": 160,
+  "pad": 7,
+  "worldH": 0.8,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "caphe_cay": {
+  "w": 170,
+  "h": 150,
+  "pad": 7,
+  "worldH": 0.5,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "ghe": {
+  "w": 320,
+  "h": 150,
+  "pad": 7,
+  "worldH": 0.5,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "xuongrong": {
+  "w": 100,
+  "h": 140,
+  "pad": 7,
+  "worldH": 0.42,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "bendo": {
+  "w": 220,
+  "h": 100,
+  "pad": 7,
+  "worldH": 0.36,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "miquang": {
+  "w": 96,
+  "h": 96,
+  "pad": 7,
+  "worldH": 0.25,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "comlam": {
+  "w": 96,
+  "h": 96,
+  "pad": 7,
+  "worldH": 0.25,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "hutieu": {
+  "w": 96,
+  "h": 96,
+  "pad": 7,
+  "worldH": 0.25,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "banhxeo": {
+  "w": 96,
+  "h": 96,
+  "pad": 7,
+  "worldH": 0.25,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "xoi": {
+  "w": 96,
+  "h": 96,
+  "pad": 7,
+  "worldH": 0.25,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "thuyenthung": {
+  "w": 170,
+  "h": 90,
+  "pad": 7,
+  "worldH": 0.32,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
+ },
+ "daydenlong": {
+  "w": 260,
+  "h": 84,
+  "pad": 7,
+  "worldH": 0.27,
+  "flat": false,
+  "noEdge": false,
+  "glow": true
+ },
+ "vit": {
+  "w": 76,
+  "h": 76,
+  "pad": 7,
+  "worldH": 0.2,
+  "flat": false,
+  "noEdge": false,
+  "glow": false
  }
 }

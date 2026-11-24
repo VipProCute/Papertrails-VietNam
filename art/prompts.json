@@ -1,307 +1,432 @@
 {
-  "style": "Hand-cut paper collage and gouache on textured dó paper: the subject is built from layered cut-paper pieces, each with a thin cream paper edge and subtle soft inner shadows between layers, with visible paper fibre grain and slightly uneven hand-painted colour. Warm, slightly muted Đông Hồ woodblock-print palette: cream #f3e6c8, vermilion #c8452c, ochre yellow #e3b23c, indigo #2e4d6b, greens #5f8f4e and #3d6b3f, browns #6e4a2c. Flat front-on orthographic view with no perspective, like a pop-up book piece standing upright, with a clean readable silhouette. No cast shadow on the ground, no background scenery. A single isolated object, centred, its base touching the bottom edge of the image, on a fully transparent background (if transparency is impossible: a perfectly flat pure magenta #FF00FF background with no gradient). Keep the exact silhouette, pose, proportions and facing direction of the reference image; improve materials, detail and charm.",
-  "style_flat": "Hand-cut paper collage and gouache on textured dó paper: the piece is built from layered cut-paper shapes, each with a thin cream paper edge and subtle soft inner shadows between layers, with visible paper fibre grain and slightly uneven hand-painted colour. Warm, slightly muted Đông Hồ woodblock-print palette: cream #f3e6c8, vermilion #c8452c, ochre yellow #e3b23c, indigo #2e4d6b, greens #5f8f4e and #3d6b3f, browns #6e4a2c. Strictly top-down flat view looking straight down at the ground, orthographic, no perspective, no horizon, no upright objects. No cast shadow, no background scenery. Keep the exact layout, proportions and outline of the reference image; improve materials, detail and charm. Unless the prompt says it must tile or fill the whole square, the piece is a single isolated shape centred on a fully transparent background (if transparency is impossible: a perfectly flat pure magenta #FF00FF background with no gradient).",
-  "negative": "Avoid: any text, letters, logos or watermarks other than text explicitly specified; photorealism; 3D render; glossy, gradient-heavy or clean-vector look; plastic or airbrushed shading; ground shadow or floor; background scenery, sky, frame or border; perspective or tilted view; extra objects not in the reference; changing the facing direction, pose or proportions; cropped or cut-off subject; neon or oversaturated colours.",
-  "sprites": {
-    "tre": {
-      "prompt": "A dense clump of village bamboo (lũy tre làng): many slender jointed culms in green and olive with visible nodes, rising from a tight base and arching slightly at the top, covered in layered cut-paper lance-shaped leaves in two greens. Pale yellow-ochre sheath scraps at the nodes; the clump is thicker at the centre and thins toward the edges.",
-      "size": "1024x1536",
-      "kind": "card"
-    },
-    "chuoi": {
-      "prompt": "A banana plant: a short pale-green pseudostem topped by a fan of big paddle-shaped leaves with torn edges and visible midribs. A hanging bunch of green-yellow bananas and a drooping purple-maroon banana flower bud dangle beneath the leaves.",
-      "size": "1024x1024",
-      "kind": "card"
-    },
-    "cau": {
-      "prompt": "A slender areca palm (cây cau) with a tall smooth pale-green trunk marked by ring scars, topped by a small crown of arching feathery fronds. Just under the crown hangs a cluster of orange-red areca nuts on a pale stalk.",
-      "size": "1024x1536",
-      "kind": "card"
-    },
-    "dua": {
-      "prompt": "A leaning coconut palm with a curved, ringed brown-grey trunk and a crown of long drooping pinnate fronds in two greens. A cluster of green coconuts hangs below the crown; the lean and curve match the reference exactly.",
-      "size": "1024x1536",
-      "kind": "card"
-    },
-    "da": {
-      "prompt": "An ancient banyan tree (cây đa) of the village gate: a thick gnarled trunk in layered browns, a very wide rounded canopy built from overlapping cut-paper leaf clusters in deep greens, and long thin aerial roots hanging down like curtains, some reaching the ground. Mossy knots and buttress roots at the base.",
-      "size": "1024x1024",
-      "kind": "card"
-    },
-    "dao": {
-      "prompt": "A peach blossom tree (hoa đào) of Tết in full bloom: a dark twisting branch structure in brown-black, covered in layered five-petal pink and pale-pink blossoms with tiny red centres and a few fresh green leaf buds. Blossoms clump densely in the canopy and some drift lightly at the edges.",
-      "size": "1024x1024",
-      "kind": "card"
-    },
-    "thong": {
-      "prompt": "A tall pine tree (cây thông) with a straight reddish-brown scaly trunk and tiered, drooping branches carrying clumps of long needles in layered dark and mid greens. A few small brown pine cones hang among the needles.",
-      "size": "1024x1536",
-      "kind": "card"
-    },
-    "bui": {
-      "prompt": "A low rounded green shrub made of overlapping cut-paper leaves in two greens, scattered with small yellow and white five-petal flowers. Compact, wide and soft-edged, sitting directly on the ground line.",
-      "size": "1536x1024",
-      "kind": "card"
-    },
-    "hoagiay": {
-      "prompt": "A bougainvillea (hoa giấy) bush: a mounded mass of green leaves smothered in paper-thin magenta-pink bracts layered like crumpled tissue, with a few tiny cream flowers at the centres. Slender woody stems are visible at the base.",
-      "size": "1536x1024",
-      "kind": "card"
-    },
-    "lau": {
-      "prompt": "A small tuft of wild grass (cỏ lau) with slender blades in several greens, fanning out and curving at the tips, a few taller blades behind shorter ones. Very simple, low and charming.",
-      "size": "1536x1024",
-      "kind": "card"
-    },
-    "che": {
-      "prompt": "A row of three rounded tea bushes (cây chè) with dense, evenly trimmed green foliage in layered cut-paper leaves, light new-leaf tips in yellow-green on top. Short brown stems are just visible at the bottom, with a small gap between the bushes.",
-      "size": "1536x1024",
-      "kind": "card"
-    },
-    "sen": {
-      "prompt": "A lotus (hoa sen) with one fully open pink flower with layered pointed petals shading from white to rose and a yellow centre, plus a closed bud on a green stem. Round green lotus pads with radiating veins sit around the base.",
-      "size": "1536x1024",
-      "kind": "card"
-    },
-    "lua": {
-      "prompt": "A thin horizontal strip of young green rice seedlings in a neat row: dense upright grass-like blades in bright and mid greens, slightly varied in height, with a few darker blades behind. Very low and wide, a gentle undulating top edge.",
-      "size": "1536x1024",
-      "kind": "card"
-    },
-    "luavang": {
-      "prompt": "A thin horizontal strip of ripe golden rice in a neat row: dense blades in gold and ochre with heavy drooping grain panicles bowing to one side, a few rust-orange tips and straw-yellow highlights. Very low and wide, a gentle undulating top edge.",
-      "size": "1536x1024",
-      "kind": "card"
-    },
-    "datang": {
-      "prompt": "A weathered grey boulder with a rounded, slightly irregular shape, built from layered cut-paper facets in warm and cool greys. Small patches of green moss on top and a few hairline cracks.",
-      "size": "1536x1024",
-      "kind": "card"
-    },
-    "rom": {
-      "prompt": "A traditional haystack (đống rơm) piled in a tall rounded cone around a central pole whose tip pokes out at the top. Straw-gold layered cut-paper strands with ochre and pale cream strokes show the combed texture, and a rope band wraps the middle.",
-      "size": "1024x1024",
-      "kind": "card"
-    },
-    "chum": {
-      "prompt": "A Vietnamese brown glazed ceramic water jar (chum, vại) with a wide rounded belly, narrow neck and a flared rim, in glossy-looking deep brown with ochre drip glaze near the shoulder. A simple round lid or wooden cover sits on top.",
-      "size": "1024x1024",
-      "kind": "card"
-    },
-    "gieng": {
-      "prompt": "A village brick well (giếng làng): a low round wall of weathered red-brown bricks with mossy mortar lines, topped by a simple wooden frame with a pulley beam. A small wooden bucket hangs from a rope.",
-      "size": "1024x1024",
-      "kind": "card"
-    },
-    "cotdien": {
-      "prompt": "A tall grey concrete electricity pole with horizontal cross-arms and white ceramic insulators, carrying a tangle of sagging black wires that loop and cross. Two grey conical loudspeakers (loa phường) are mounted near the top pointing outward, with a thin dark cable running down the pole.",
-      "size": "1024x1536",
-      "kind": "card"
-    },
-    "denlong_off": {
-      "prompt": "A wooden post with a short curved arm near the top from which hangs a Hội An silk lantern, unlit: a rounded dark-red silk body with vertical bamboo ribs, a gold-ochre top cap and bottom, and a short tassel. The lantern is dull and dark, with a clearly bounded pale inner panel area, and the wood is warm brown.",
-      "size": "1024x1536",
-      "kind": "card"
-    },
-    "denlong_on": {
-      "prompt": "The identical wooden post and curved arm as the unlit version, with the same Hội An silk lantern now glowing: the body is a warm luminous yellow-orange with soft lighter centre and deep orange ribs, clearly bounded and flat, with the same gold-ochre caps and tassel. Keep the lantern area bright, light and cleanly outlined so it can glow at night; the post stays warm brown.",
-      "size": "1024x1536",
-      "kind": "card"
-    },
-    "cotmoc": {
-      "prompt": "A small roadside kilometre milestone (cột mốc): a white rounded-top concrete stone with a vermilion red painted top. On its face, the exact text \"QL1\" on the upper line and the exact text \"36km\" on the lower line, in bold dark lettering; no other text.",
-      "size": "1024x1024",
-      "kind": "card"
-    },
-    "bunhin": {
-      "prompt": "A rice-field scarecrow (bù nhìn) built on crossed bamboo poles, wearing a faded indigo-blue peasant shirt with arms outstretched and a conical nón lá hat. The face is a simple straw-stuffed blank with stitched details; straw pokes out of the sleeves and a little ragged cloth flutters.",
-      "size": "1024x1536",
-      "kind": "card"
-    },
-    "quan": {
-      "prompt": "A roadside iced-tea stall (quán trà đá): a big red-and-white striped umbrella shading a low wooden table with a few glasses of tea and a metal kettle, beside red and blue low plastic stools. A small hanging sign shows the exact text \"TRÀ ĐÁ\"; no other text.",
-      "size": "1536x1024",
-      "kind": "card"
-    },
-    "xebanhmi": {
-      "prompt": "A bánh mì street cart: a wooden cart with a glass display case showing crusty golden baguettes and fillings, a red-and-white striped awning above, and two spoked wheels. The exact text \"BÁNH MÌ\" is painted on the front panel; no other text.",
-      "size": "1024x1024",
-      "kind": "card"
-    },
-    "xuong": {
-      "prompt": "A small wooden sampan (xuồng ba lá) seen from the side, a narrow shallow boat with upturned pointed ends, plank sides in brown and ochre with a red-painted stripe, and a long wooden oar resting across it. The hull sits flat on the base line with no water drawn.",
-      "size": "1536x1024",
-      "kind": "card"
-    },
-    "nhangoi": {
-      "prompt": "A traditional northern Vietnamese three-bay house (nhà ba gian): a red fish-scale tile roof with gently curved ridge and upturned ridge ends, yellow lime-washed walls, and dark wooden panelled doors in the central bay with lattice side windows. A tall pole at the right carries the red flag with a yellow five-pointed star.",
-      "size": "1536x1024",
-      "kind": "card"
-    },
-    "nhala": {
-      "prompt": "A Mekong Delta thatched house (nhà lá) raised on short wooden stilts: a steep roof of layered golden-brown nipa-palm thatch, woven nipa-leaf walls in muted tan, a small open wooden doorway and a simple window shutter. A few plank steps lead up.",
-      "size": "1536x1024",
-      "kind": "card"
-    },
-    "nhapho": {
-      "prompt": "A two-storey Hội An shophouse: ochre-yellow plastered walls with peeling patches, teal louvred wooden shutters on the upper windows, a mossy curved tile roof, and a small wooden balcony. Four round silk lanterns in red, orange and yellow hang over the ground-floor doorway, and a sign carries the exact text \"HIỆU MAY\"; no other text. Keep the windows and lanterns light and clearly bounded.",
-      "size": "1024x1024",
-      "kind": "card"
-    },
-    "nhasan": {
-      "prompt": "A north-west highland stilt house (nhà sàn) raised on rows of wooden posts, with a steep dark thatched roof, plank walls in warm brown with a small window, and a wooden platform with a simple railing. A notched-log ladder leads up to the doorway. Keep the window light and clearly bounded.",
-      "size": "1536x1024",
-      "kind": "card"
-    },
-    "dinh": {
-      "prompt": "A Vietnamese village communal house (đình làng): a stone plinth base, thick red-lacquered columns, a broad two-tier roof of grey-brown tiles with curved upturned corners and dragon-shaped ridge ends, and carved wooden doors. A horizontal board above the entrance reads the exact text \"ĐÌNH LÀNG\"; no other text.",
-      "size": "1536x1024",
-      "kind": "card"
-    },
-    "conglang": {
-      "prompt": "A Vietnamese village gate (cổng làng): two sturdy yellow pillars with red panels and a small tiled roof across the top, with a blue sign board bearing the exact text \"LÀNG VĂN HOÁ\"; no other text. The opening between the two pillars is completely empty and fully transparent, with nothing drawn in it.",
-      "size": "1024x1024",
-      "kind": "card"
-    },
-    "trau": {
-      "prompt": "A water buffalo (con trâu) in side view facing right: a heavy dark grey-brown body, a broad back, swept-back crescent horns and a hanging head, thick legs and a rope through the nose. A small child in a conical nón lá sits on its back playing a bamboo flute.",
-      "size": "1536x1024",
-      "kind": "character"
-    },
-    "co": {
-      "prompt": "A white egret (con cò) standing tall and still in side view facing right, with a slender S-curved neck, a long yellow beak, thin dark legs and snowy layered cut-paper feathers with a few long plumes on the back.",
-      "size": "1024x1536",
-      "kind": "character"
-    },
-    "ga": {
-      "prompt": "A plump brown hen (gà mái) in side view facing right, with russet and chestnut layered feathers, a small red comb and wattle, a yellow beak and thin yellow legs. A round, compact, charming shape.",
-      "size": "1024x1024",
-      "kind": "character"
-    },
-    "cho_sit": {
-      "prompt": "A yellow Vietnamese village dog (chó cỏ) sitting in side view facing right: short golden-tan coat with cream chest and muzzle, alert pricked ears, dark eyes, and a thick tail curled up over its back. Character design: same dog in all three poses, short golden-yellow fur, pointed upright ears, narrow cream muzzle, black nose.",
-      "size": "1536x1024",
-      "kind": "character"
-    },
-    "cho_run1": {
-      "prompt": "The same yellow Vietnamese village dog (chó cỏ) running at full stretch in side view facing right, front legs reaching forward and back legs stretched behind, body low and long. Angry face with bared teeth and flattened ears. Character design: same dog in all three poses, short golden-yellow fur, pointed upright ears, narrow cream muzzle, black nose, tail curled up over its back.",
-      "size": "1536x1024",
-      "kind": "character"
-    },
-    "cho_run2": {
-      "prompt": "The same yellow Vietnamese village dog (chó cỏ) mid-stride in side view facing right, all four legs gathered under the body, back arched. Angry face with bared teeth and flattened ears. Character design: same dog in all three poses, short golden-yellow fur, pointed upright ears, narrow cream muzzle, black nose, tail curled up over its back.",
-      "size": "1536x1024",
-      "kind": "character"
-    },
-    "k_idle": {
-      "prompt": "The traveller, a small Vietnamese wanderer in side view facing right, standing still. Character design (identical in every pose): conical palm-leaf nón lá hat, brown áo bà ba tunic with loose dark trousers and bare feet, a black-and-white checked khăn rằn scarf around the neck, an indigo backpack with a rolled straw bedroll strapped on top, and a small glowing yellow paper lantern held in the front hand on a short stick.",
-      "size": "1024x1536",
-      "kind": "character"
-    },
-    "k_w1": {
-      "prompt": "The traveller, a small Vietnamese wanderer in side view facing right, walking pose A with legs wide apart mid-stride and arms swinging naturally. Character design (identical in every pose): conical palm-leaf nón lá hat, brown áo bà ba tunic with loose dark trousers and bare feet, a black-and-white checked khăn rằn scarf around the neck, an indigo backpack with a rolled straw bedroll strapped on top, and a small glowing yellow paper lantern held in the front hand on a short stick.",
-      "size": "1024x1536",
-      "kind": "character"
-    },
-    "k_w2": {
-      "prompt": "The traveller, a small Vietnamese wanderer in side view facing right, walking pose B with legs crossing as one passes the other. Character design (identical in every pose): conical palm-leaf nón lá hat, brown áo bà ba tunic with loose dark trousers and bare feet, a black-and-white checked khăn rằn scarf around the neck, an indigo backpack with a rolled straw bedroll strapped on top, and a small glowing yellow paper lantern held in the front hand on a short stick.",
-      "size": "1024x1536",
-      "kind": "character"
-    },
-    "xm_side": {
-      "prompt": "A red underbone motorbike (Honda Wave style) in side view facing right, with a rider in a yellow helmet, white face mask and a pink floral sun-protection jacket. Behind the rider is a tall strapped stack of cardboard boxes and a woven crate of chickens, tied with rope.",
-      "size": "1536x1024",
-      "kind": "character"
-    },
-    "xm_front": {
-      "prompt": "The same red underbone motorbike and rider (yellow helmet, face mask, pink floral sun-jacket) seen from the front, headlight on and round mirrors out. Two big bamboo baskets of fruit and flowers hang left and right from the handlebars and frame.",
-      "size": "1024x1536",
-      "kind": "character"
-    },
-    "xm_back": {
-      "prompt": "The same red underbone motorbike and rider (yellow helmet, pink floral sun-jacket) seen from behind, with a red glowing tail light and licence plate area left blank. Cardboard boxes are strapped behind the rider with rope.",
-      "size": "1024x1536",
-      "kind": "character"
-    },
-    "banhmi": {
-      "prompt": "A bánh mì sandwich: a crisp golden baguette split lengthwise, filled with pâté, pork slices, pickled carrot and daikon, cucumber, coriander and sliced red chilli peeking out. A paper wrapper covers the lower part.",
-      "size": "1024x1024",
-      "kind": "card"
-    },
-    "pho": {
-      "prompt": "A bowl of phở: a wide white-and-indigo ceramic bowl of clear amber broth with flat rice noodles, thin beef slices, green onion and herbs, a pair of wooden chopsticks resting across it, and curling cut-paper wisps of steam rising above.",
-      "size": "1024x1024",
-      "kind": "card"
-    },
-    "caphe": {
-      "prompt": "A tall glass of cà phê sữa đá: dark coffee blended with a creamy caramel-tan milk layer, ice cubes visible, a bendy straw sticking out and a few condensation drops on the glass. Simple and appealing.",
-      "size": "1024x1024",
-      "kind": "card"
-    },
-    "banhchung": {
-      "prompt": "A square bánh chưng wrapped in deep green dong leaves with visible leaf veins, tied crosswise with thin bamboo strings in a neat grid. A tiny slice shows the sticky rice and yellow mung bean layer at one corner.",
-      "size": "1024x1024",
-      "kind": "card"
-    },
-    "ruong": {
-      "prompt": "Top-down view of a square-ish plot of green rice paddy with neat parallel rows of seedlings in two greens, a few small water glints between the rows, and a slightly irregular torn-paper outline with a cream paper edge.",
-      "size": "1024x1024",
-      "kind": "flat"
-    },
-    "ruongvang": {
-      "prompt": "Top-down view of the same square-ish paddy plot, now ripe: neat parallel rows of golden and ochre rice with heavy grain heads, a few straw-coloured highlights, and the same slightly irregular torn-paper outline with a cream paper edge.",
-      "size": "1024x1024",
-      "kind": "flat"
-    },
-    "bacthang": {
-      "prompt": "Top-down view of terraced rice fields (ruộng bậc thang) shown as concentric curving contour bands, from dark green on the outside through mid green and yellow-green to a pale yellow-green centre. Thin raised earth bunds separate the bands, with a few water glints.",
-      "size": "1024x1024",
-      "kind": "flat"
-    },
-    "ao": {
-      "prompt": "Top-down view of a village pond: a sandy-tan irregular bank around a teal water surface with soft concentric ripples, and a few round green lotus pads with small pink blossoms floating near the edge.",
-      "size": "1024x1024",
-      "kind": "flat"
-    },
-    "san": {
-      "prompt": "Top-down view of a seamless tile of old red-brown Bát Tràng brick paving: rectangular bricks in a staggered pattern with slightly varied terracotta, brown and ochre tones, fine mortar gaps and worn edges. No outline, no border; the pattern fills the entire square edge to edge and must tile seamlessly on all four sides.",
-      "size": "1024x1024",
-      "kind": "flat"
-    },
-    "duong": {
-      "prompt": "Top-down view of a strip of pale sandy dirt footpath, light cream-tan with small pebbles and subtle tyre-worn streaks, with ragged long upper and lower edges. The strip runs horizontally edge to edge and must tile seamlessly left to right.",
-      "size": "1536x1024",
-      "kind": "flat"
-    },
-    "chua_cau": {
-      "kind": "card",
-      "size": "1536x1024",
-      "prompt": "Seen exactly side-on along its length, as a pop-up paper piece: the bridge spans left to right across the full image width, both ends of the bridge resting on the bottom edge of the image (the ends are the lowest points), nothing below the bridge feet. The Japanese Covered Bridge of Hội An (Chùa Cầu), Vietnam: a short covered wooden bridge. Lower part: three or four grey weathered stone piers with small round-topped arches between them, a white plastered band along the deck edge. Upper part: an open wooden gallery with a dark brown lattice balustrade and slim columns, a row of round Hội An silk lanterns (warm yellow and vermilion) hanging under the eaves along the whole gallery, softly glowing warm windows inside. Roof: a long curved roof of small terracotta-orange yin-yang tiles with gently upturned ends; the ridge and roof ends decorated with blue-and-white porcelain shard mosaic dragon and cloud ornaments (cobalt blue on white). At the right end a small pagoda block with ochre-red plastered walls and its own little tiled roof. Lantern bodies bright, warm and cleanly outlined so they can glow at night."
-    },
-    "cau_ngoi": {
-      "kind": "card",
-      "size": "1536x1024",
-      "prompt": "Seen exactly side-on along its length, as a pop-up paper piece: the bridge spans left to right across the full image width, both ends of the bridge resting on the bottom edge of the image (the ends are the lowest points), nothing below the bridge feet. A northern Vietnamese tiled-roof village bridge in the 'thượng gia hạ kiều' style (house above, bridge below), like the 500-year-old Chợ Lương tiled bridge of Nam Định: a long low bridge with nine bays, a row of dark ironwood columns standing on short grey stone pillar feet, a plain wooden plank deck with low wooden benches and railings between the columns where villagers rest, and a long gently curved roof of small dark grey-brown fish-scale tiles with slightly upturned corners. A small red-lacquered board under the roof at the centre reads the exact text \"CẦU NGÓI\"; no other text. Plain, rustic, warm brown wood."
-    },
-    "cau_dua": {
-      "kind": "card",
-      "size": "1536x1024",
-      "prompt": "Seen exactly side-on along its length, as a pop-up paper piece: the bridge spans left to right across the full image width, both ends of the bridge resting on the bottom edge of the image (the ends are the lowest points), nothing below the bridge feet. A Mekong Delta monkey bridge (cầu khỉ) made of coconut palm trunks: two long, slightly bowed coconut trunks laid end to end form the narrow footway, rising gently in the middle; they rest on crossed X-shaped bamboo leg braces planted at both ends and in the middle; a thin bamboo handrail runs along one side on bamboo posts, all lashed together with twine. Ochre-brown ringed coconut bark, pale green-yellow bamboo. Very light and airy, lots of empty space between the poles."
-    },
-    "cau_treo": {
-      "kind": "card",
-      "size": "1536x1024",
-      "prompt": "Seen exactly side-on along its length, as a pop-up paper piece: the bridge spans left to right across the full image width, both ends of the bridge resting on the bottom edge of the image (the ends are the lowest points), nothing below the bridge feet. A northern mountain (Tây Bắc) bamboo suspension footbridge: two tall bamboo A-frame towers lashed with rattan, one at each end; two rope cables sag in a gentle curve between the tower tops with thin vertical hanger ropes holding a narrow footway of woven bamboo slats that hangs only a little lower in the middle; a few small coloured prayer-style cloth strips (indigo, red, ochre) tied to the towers. Pale bamboo, brown rope."
-    },
-    "thuyen": {
-      "kind": "card",
-      "size": "1536x1024",
-      "prompt": "A small Vietnamese wooden sampan rowing boat (ghe / thuyền nan) seen exactly side-on, floating, the hull bottom touching the bottom edge of the image: a long slender dark brown wooden hull with upswept bow and stern, a painted eye on the bow (red and white), a low arched woven bamboo canopy in the middle, and a conical palm-leaf hat (nón lá) resting on the deck. No people, no water."
-    },
-    "lucbinh": {
-      "kind": "card",
-      "size": "1536x1024",
-      "prompt": "A small floating clump of water hyacinth (lục bình) seen from the front: glossy round bright green leaves with swollen stalks, and two short spikes of pale lilac-purple flowers with a yellow eye; the clump's base flat on the bottom edge of the image. No water."
-    }
+ "style": "Hand-cut paper collage and gouache on textured dó paper: the subject is built from layered cut-paper pieces, each with a thin cream paper edge and subtle soft inner shadows between layers, with visible paper fibre grain and slightly uneven hand-painted colour. Warm, slightly muted Đông Hồ woodblock-print palette: cream #f3e6c8, vermilion #c8452c, ochre yellow #e3b23c, indigo #2e4d6b, greens #5f8f4e and #3d6b3f, browns #6e4a2c. Flat front-on orthographic view with no perspective, like a pop-up book piece standing upright, with a clean readable silhouette. No cast shadow on the ground, no background scenery. A single isolated object, centred, its base touching the bottom edge of the image, on a fully transparent background (if transparency is impossible: a perfectly flat pure magenta #FF00FF background with no gradient). Keep the exact silhouette, pose, proportions and facing direction of the reference image; improve materials, detail and charm.",
+ "style_flat": "Hand-cut paper collage and gouache on textured dó paper: the piece is built from layered cut-paper shapes, each with a thin cream paper edge and subtle soft inner shadows between layers, with visible paper fibre grain and slightly uneven hand-painted colour. Warm, slightly muted Đông Hồ woodblock-print palette: cream #f3e6c8, vermilion #c8452c, ochre yellow #e3b23c, indigo #2e4d6b, greens #5f8f4e and #3d6b3f, browns #6e4a2c. Strictly top-down flat view looking straight down at the ground, orthographic, no perspective, no horizon, no upright objects. No cast shadow, no background scenery. Keep the exact layout, proportions and outline of the reference image; improve materials, detail and charm. Unless the prompt says it must tile or fill the whole square, the piece is a single isolated shape centred on a fully transparent background (if transparency is impossible: a perfectly flat pure magenta #FF00FF background with no gradient).",
+ "negative": "Avoid: any text, letters, logos or watermarks other than text explicitly specified; photorealism; 3D render; glossy, gradient-heavy or clean-vector look; plastic or airbrushed shading; ground shadow or floor; background scenery, sky, frame or border; perspective or tilted view; extra objects not in the reference; changing the facing direction, pose or proportions; cropped or cut-off subject; neon or oversaturated colours.",
+ "sprites": {
+  "tre": {
+   "prompt": "A dense clump of village bamboo (lũy tre làng): many slender jointed culms in green and olive with visible nodes, rising from a tight base and arching slightly at the top, covered in layered cut-paper lance-shaped leaves in two greens. Pale yellow-ochre sheath scraps at the nodes; the clump is thicker at the centre and thins toward the edges.",
+   "size": "1024x1536",
+   "kind": "card"
+  },
+  "chuoi": {
+   "prompt": "A banana plant: a short pale-green pseudostem topped by a fan of big paddle-shaped leaves with torn edges and visible midribs. A hanging bunch of green-yellow bananas and a drooping purple-maroon banana flower bud dangle beneath the leaves.",
+   "size": "1024x1024",
+   "kind": "card"
+  },
+  "cau": {
+   "prompt": "A slender areca palm (cây cau) with a tall smooth pale-green trunk marked by ring scars, topped by a small crown of arching feathery fronds. Just under the crown hangs a cluster of orange-red areca nuts on a pale stalk.",
+   "size": "1024x1536",
+   "kind": "card"
+  },
+  "dua": {
+   "prompt": "A leaning coconut palm with a curved, ringed brown-grey trunk and a crown of long drooping pinnate fronds in two greens. A cluster of green coconuts hangs below the crown; the lean and curve match the reference exactly.",
+   "size": "1024x1536",
+   "kind": "card"
+  },
+  "da": {
+   "prompt": "An ancient banyan tree (cây đa) of the village gate: a thick gnarled trunk in layered browns, a very wide rounded canopy built from overlapping cut-paper leaf clusters in deep greens, and long thin aerial roots hanging down like curtains, some reaching the ground. Mossy knots and buttress roots at the base.",
+   "size": "1024x1024",
+   "kind": "card"
+  },
+  "dao": {
+   "prompt": "A peach blossom tree (hoa đào) of Tết in full bloom: a dark twisting branch structure in brown-black, covered in layered five-petal pink and pale-pink blossoms with tiny red centres and a few fresh green leaf buds. Blossoms clump densely in the canopy and some drift lightly at the edges.",
+   "size": "1024x1024",
+   "kind": "card"
+  },
+  "thong": {
+   "prompt": "A tall pine tree (cây thông) with a straight reddish-brown scaly trunk and tiered, drooping branches carrying clumps of long needles in layered dark and mid greens. A few small brown pine cones hang among the needles.",
+   "size": "1024x1536",
+   "kind": "card"
+  },
+  "bui": {
+   "prompt": "A low rounded green shrub made of overlapping cut-paper leaves in two greens, scattered with small yellow and white five-petal flowers. Compact, wide and soft-edged, sitting directly on the ground line.",
+   "size": "1536x1024",
+   "kind": "card"
+  },
+  "hoagiay": {
+   "prompt": "A bougainvillea (hoa giấy) bush: a mounded mass of green leaves smothered in paper-thin magenta-pink bracts layered like crumpled tissue, with a few tiny cream flowers at the centres. Slender woody stems are visible at the base.",
+   "size": "1536x1024",
+   "kind": "card"
+  },
+  "lau": {
+   "prompt": "A small tuft of wild grass (cỏ lau) with slender blades in several greens, fanning out and curving at the tips, a few taller blades behind shorter ones. Very simple, low and charming.",
+   "size": "1536x1024",
+   "kind": "card"
+  },
+  "che": {
+   "prompt": "A row of three rounded tea bushes (cây chè) with dense, evenly trimmed green foliage in layered cut-paper leaves, light new-leaf tips in yellow-green on top. Short brown stems are just visible at the bottom, with a small gap between the bushes.",
+   "size": "1536x1024",
+   "kind": "card"
+  },
+  "sen": {
+   "prompt": "A lotus (hoa sen) with one fully open pink flower with layered pointed petals shading from white to rose and a yellow centre, plus a closed bud on a green stem. Round green lotus pads with radiating veins sit around the base.",
+   "size": "1536x1024",
+   "kind": "card"
+  },
+  "lua": {
+   "prompt": "A thin horizontal strip of young green rice seedlings in a neat row: dense upright grass-like blades in bright and mid greens, slightly varied in height, with a few darker blades behind. Very low and wide, a gentle undulating top edge.",
+   "size": "1536x1024",
+   "kind": "card"
+  },
+  "luavang": {
+   "prompt": "A thin horizontal strip of ripe golden rice in a neat row: dense blades in gold and ochre with heavy drooping grain panicles bowing to one side, a few rust-orange tips and straw-yellow highlights. Very low and wide, a gentle undulating top edge.",
+   "size": "1536x1024",
+   "kind": "card"
+  },
+  "datang": {
+   "prompt": "A weathered grey boulder with a rounded, slightly irregular shape, built from layered cut-paper facets in warm and cool greys. Small patches of green moss on top and a few hairline cracks.",
+   "size": "1536x1024",
+   "kind": "card"
+  },
+  "rom": {
+   "prompt": "A traditional haystack (đống rơm) piled in a tall rounded cone around a central pole whose tip pokes out at the top. Straw-gold layered cut-paper strands with ochre and pale cream strokes show the combed texture, and a rope band wraps the middle.",
+   "size": "1024x1024",
+   "kind": "card"
+  },
+  "chum": {
+   "prompt": "A Vietnamese brown glazed ceramic water jar (chum, vại) with a wide rounded belly, narrow neck and a flared rim, in glossy-looking deep brown with ochre drip glaze near the shoulder. A simple round lid or wooden cover sits on top.",
+   "size": "1024x1024",
+   "kind": "card"
+  },
+  "gieng": {
+   "prompt": "A village brick well (giếng làng): a low round wall of weathered red-brown bricks with mossy mortar lines, topped by a simple wooden frame with a pulley beam. A small wooden bucket hangs from a rope.",
+   "size": "1024x1024",
+   "kind": "card"
+  },
+  "cotdien": {
+   "prompt": "A tall grey concrete electricity pole with horizontal cross-arms and white ceramic insulators, carrying a tangle of sagging black wires that loop and cross. Two grey conical loudspeakers (loa phường) are mounted near the top pointing outward, with a thin dark cable running down the pole.",
+   "size": "1024x1536",
+   "kind": "card"
+  },
+  "denlong_off": {
+   "prompt": "A wooden post with a short curved arm near the top from which hangs a Hội An silk lantern, unlit: a rounded dark-red silk body with vertical bamboo ribs, a gold-ochre top cap and bottom, and a short tassel. The lantern is dull and dark, with a clearly bounded pale inner panel area, and the wood is warm brown.",
+   "size": "1024x1536",
+   "kind": "card"
+  },
+  "denlong_on": {
+   "prompt": "The identical wooden post and curved arm as the unlit version, with the same Hội An silk lantern now glowing: the body is a warm luminous yellow-orange with soft lighter centre and deep orange ribs, clearly bounded and flat, with the same gold-ochre caps and tassel. Keep the lantern area bright, light and cleanly outlined so it can glow at night; the post stays warm brown.",
+   "size": "1024x1536",
+   "kind": "card"
+  },
+  "cotmoc": {
+   "prompt": "A small roadside kilometre milestone (cột mốc): a white rounded-top concrete stone with a vermilion red painted top. On its face, the exact text \"QL1\" on the upper line and the exact text \"36km\" on the lower line, in bold dark lettering; no other text.",
+   "size": "1024x1024",
+   "kind": "card"
+  },
+  "bunhin": {
+   "prompt": "A rice-field scarecrow (bù nhìn) built on crossed bamboo poles, wearing a faded indigo-blue peasant shirt with arms outstretched and a conical nón lá hat. The face is a simple straw-stuffed blank with stitched details; straw pokes out of the sleeves and a little ragged cloth flutters.",
+   "size": "1024x1536",
+   "kind": "card"
+  },
+  "quan": {
+   "prompt": "A roadside iced-tea stall (quán trà đá): a big red-and-white striped umbrella shading a low wooden table with a few glasses of tea and a metal kettle, beside red and blue low plastic stools. A small hanging sign shows the exact text \"TRÀ ĐÁ\"; no other text.",
+   "size": "1536x1024",
+   "kind": "card"
+  },
+  "xebanhmi": {
+   "prompt": "A bánh mì street cart: a wooden cart with a glass display case showing crusty golden baguettes and fillings, a red-and-white striped awning above, and two spoked wheels. The exact text \"BÁNH MÌ\" is painted on the front panel; no other text.",
+   "size": "1024x1024",
+   "kind": "card"
+  },
+  "xuong": {
+   "prompt": "A small wooden sampan (xuồng ba lá) seen from the side, a narrow shallow boat with upturned pointed ends, plank sides in brown and ochre with a red-painted stripe, and a long wooden oar resting across it. The hull sits flat on the base line with no water drawn.",
+   "size": "1536x1024",
+   "kind": "card"
+  },
+  "nhangoi": {
+   "prompt": "A traditional northern Vietnamese three-bay house (nhà ba gian): a red fish-scale tile roof with gently curved ridge and upturned ridge ends, yellow lime-washed walls, and dark wooden panelled doors in the central bay with lattice side windows. A tall pole at the right carries the red flag with a yellow five-pointed star.",
+   "size": "1536x1024",
+   "kind": "card"
+  },
+  "nhala": {
+   "prompt": "A Mekong Delta thatched house (nhà lá) raised on short wooden stilts: a steep roof of layered golden-brown nipa-palm thatch, woven nipa-leaf walls in muted tan, a small open wooden doorway and a simple window shutter. A few plank steps lead up.",
+   "size": "1536x1024",
+   "kind": "card"
+  },
+  "nhapho": {
+   "prompt": "A two-storey Hội An shophouse: ochre-yellow plastered walls with peeling patches, teal louvred wooden shutters on the upper windows, a mossy curved tile roof, and a small wooden balcony. Four round silk lanterns in red, orange and yellow hang over the ground-floor doorway, and a sign carries the exact text \"HIỆU MAY\"; no other text. Keep the windows and lanterns light and clearly bounded.",
+   "size": "1024x1024",
+   "kind": "card"
+  },
+  "nhasan": {
+   "prompt": "A north-west highland stilt house (nhà sàn) raised on rows of wooden posts, with a steep dark thatched roof, plank walls in warm brown with a small window, and a wooden platform with a simple railing. A notched-log ladder leads up to the doorway. Keep the window light and clearly bounded.",
+   "size": "1536x1024",
+   "kind": "card"
+  },
+  "dinh": {
+   "prompt": "A Vietnamese village communal house (đình làng): a stone plinth base, thick red-lacquered columns, a broad two-tier roof of grey-brown tiles with curved upturned corners and dragon-shaped ridge ends, and carved wooden doors. A horizontal board above the entrance reads the exact text \"ĐÌNH LÀNG\"; no other text.",
+   "size": "1536x1024",
+   "kind": "card"
+  },
+  "conglang": {
+   "prompt": "A Vietnamese village gate (cổng làng): two sturdy yellow pillars with red panels and a small tiled roof across the top, with a blue sign board bearing the exact text \"LÀNG VĂN HOÁ\"; no other text. The opening between the two pillars is completely empty and fully transparent, with nothing drawn in it.",
+   "size": "1024x1024",
+   "kind": "card"
+  },
+  "trau": {
+   "prompt": "A water buffalo (con trâu) in side view facing right: a heavy dark grey-brown body, a broad back, swept-back crescent horns and a hanging head, thick legs and a rope through the nose. A small child in a conical nón lá sits on its back playing a bamboo flute.",
+   "size": "1536x1024",
+   "kind": "character"
+  },
+  "co": {
+   "prompt": "A white egret (con cò) standing tall and still in side view facing right, with a slender S-curved neck, a long yellow beak, thin dark legs and snowy layered cut-paper feathers with a few long plumes on the back.",
+   "size": "1024x1536",
+   "kind": "character"
+  },
+  "ga": {
+   "prompt": "A plump brown hen (gà mái) in side view facing right, with russet and chestnut layered feathers, a small red comb and wattle, a yellow beak and thin yellow legs. A round, compact, charming shape.",
+   "size": "1024x1024",
+   "kind": "character"
+  },
+  "cho_sit": {
+   "prompt": "A yellow Vietnamese village dog (chó cỏ) sitting in side view facing right: short golden-tan coat with cream chest and muzzle, alert pricked ears, dark eyes, and a thick tail curled up over its back. Character design: same dog in all three poses, short golden-yellow fur, pointed upright ears, narrow cream muzzle, black nose.",
+   "size": "1536x1024",
+   "kind": "character"
+  },
+  "cho_run1": {
+   "prompt": "The same yellow Vietnamese village dog (chó cỏ) running at full stretch in side view facing right, front legs reaching forward and back legs stretched behind, body low and long. Angry face with bared teeth and flattened ears. Character design: same dog in all three poses, short golden-yellow fur, pointed upright ears, narrow cream muzzle, black nose, tail curled up over its back.",
+   "size": "1536x1024",
+   "kind": "character"
+  },
+  "cho_run2": {
+   "prompt": "The same yellow Vietnamese village dog (chó cỏ) mid-stride in side view facing right, all four legs gathered under the body, back arched. Angry face with bared teeth and flattened ears. Character design: same dog in all three poses, short golden-yellow fur, pointed upright ears, narrow cream muzzle, black nose, tail curled up over its back.",
+   "size": "1536x1024",
+   "kind": "character"
+  },
+  "k_idle": {
+   "prompt": "The traveller, a small Vietnamese wanderer in side view facing right, standing still. Character design (identical in every pose): conical palm-leaf nón lá hat, brown áo bà ba tunic with loose dark trousers and bare feet, a black-and-white checked khăn rằn scarf around the neck, an indigo backpack with a rolled straw bedroll strapped on top, and a small glowing yellow paper lantern held in the front hand on a short stick.",
+   "size": "1024x1536",
+   "kind": "character"
+  },
+  "k_w1": {
+   "prompt": "The traveller, a small Vietnamese wanderer in side view facing right, walking pose A with legs wide apart mid-stride and arms swinging naturally. Character design (identical in every pose): conical palm-leaf nón lá hat, brown áo bà ba tunic with loose dark trousers and bare feet, a black-and-white checked khăn rằn scarf around the neck, an indigo backpack with a rolled straw bedroll strapped on top, and a small glowing yellow paper lantern held in the front hand on a short stick.",
+   "size": "1024x1536",
+   "kind": "character"
+  },
+  "k_w2": {
+   "prompt": "The traveller, a small Vietnamese wanderer in side view facing right, walking pose B with legs crossing as one passes the other. Character design (identical in every pose): conical palm-leaf nón lá hat, brown áo bà ba tunic with loose dark trousers and bare feet, a black-and-white checked khăn rằn scarf around the neck, an indigo backpack with a rolled straw bedroll strapped on top, and a small glowing yellow paper lantern held in the front hand on a short stick.",
+   "size": "1024x1536",
+   "kind": "character"
+  },
+  "xm_side": {
+   "prompt": "A red underbone motorbike (Honda Wave style) in side view facing right, with a rider in a yellow helmet, white face mask and a pink floral sun-protection jacket. Behind the rider is a tall strapped stack of cardboard boxes and a woven crate of chickens, tied with rope.",
+   "size": "1536x1024",
+   "kind": "character"
+  },
+  "xm_front": {
+   "prompt": "The same red underbone motorbike and rider (yellow helmet, face mask, pink floral sun-jacket) seen from the front, headlight on and round mirrors out. Two big bamboo baskets of fruit and flowers hang left and right from the handlebars and frame.",
+   "size": "1024x1536",
+   "kind": "character"
+  },
+  "xm_back": {
+   "prompt": "The same red underbone motorbike and rider (yellow helmet, pink floral sun-jacket) seen from behind, with a red glowing tail light and licence plate area left blank. Cardboard boxes are strapped behind the rider with rope.",
+   "size": "1024x1536",
+   "kind": "character"
+  },
+  "banhmi": {
+   "prompt": "A bánh mì sandwich: a crisp golden baguette split lengthwise, filled with pâté, pork slices, pickled carrot and daikon, cucumber, coriander and sliced red chilli peeking out. A paper wrapper covers the lower part.",
+   "size": "1024x1024",
+   "kind": "card"
+  },
+  "pho": {
+   "prompt": "A bowl of phở: a wide white-and-indigo ceramic bowl of clear amber broth with flat rice noodles, thin beef slices, green onion and herbs, a pair of wooden chopsticks resting across it, and curling cut-paper wisps of steam rising above.",
+   "size": "1024x1024",
+   "kind": "card"
+  },
+  "caphe": {
+   "prompt": "A tall glass of cà phê sữa đá: dark coffee blended with a creamy caramel-tan milk layer, ice cubes visible, a bendy straw sticking out and a few condensation drops on the glass. Simple and appealing.",
+   "size": "1024x1024",
+   "kind": "card"
+  },
+  "banhchung": {
+   "prompt": "A square bánh chưng wrapped in deep green dong leaves with visible leaf veins, tied crosswise with thin bamboo strings in a neat grid. A tiny slice shows the sticky rice and yellow mung bean layer at one corner.",
+   "size": "1024x1024",
+   "kind": "card"
+  },
+  "ruong": {
+   "prompt": "Top-down view of a square-ish plot of green rice paddy with neat parallel rows of seedlings in two greens, a few small water glints between the rows, and a slightly irregular torn-paper outline with a cream paper edge.",
+   "size": "1024x1024",
+   "kind": "flat"
+  },
+  "ruongvang": {
+   "prompt": "Top-down view of the same square-ish paddy plot, now ripe: neat parallel rows of golden and ochre rice with heavy grain heads, a few straw-coloured highlights, and the same slightly irregular torn-paper outline with a cream paper edge.",
+   "size": "1024x1024",
+   "kind": "flat"
+  },
+  "bacthang": {
+   "prompt": "Top-down view of terraced rice fields (ruộng bậc thang) shown as concentric curving contour bands, from dark green on the outside through mid green and yellow-green to a pale yellow-green centre. Thin raised earth bunds separate the bands, with a few water glints.",
+   "size": "1024x1024",
+   "kind": "flat"
+  },
+  "ao": {
+   "prompt": "Top-down view of a village pond: a sandy-tan irregular bank around a teal water surface with soft concentric ripples, and a few round green lotus pads with small pink blossoms floating near the edge.",
+   "size": "1024x1024",
+   "kind": "flat"
+  },
+  "san": {
+   "prompt": "Top-down view of a seamless tile of old red-brown Bát Tràng brick paving: rectangular bricks in a staggered pattern with slightly varied terracotta, brown and ochre tones, fine mortar gaps and worn edges. No outline, no border; the pattern fills the entire square edge to edge and must tile seamlessly on all four sides.",
+   "size": "1024x1024",
+   "kind": "flat"
+  },
+  "duong": {
+   "prompt": "Top-down view of a strip of pale sandy dirt footpath, light cream-tan with small pebbles and subtle tyre-worn streaks, with ragged long upper and lower edges. The strip runs horizontally edge to edge and must tile seamlessly left to right.",
+   "size": "1536x1024",
+   "kind": "flat"
+  },
+  "chua_cau": {
+   "kind": "card",
+   "size": "1536x1024",
+   "prompt": "Seen exactly side-on along its length, as a pop-up paper piece: the bridge spans left to right across the full image width, both ends of the bridge resting on the bottom edge of the image (the ends are the lowest points), nothing below the bridge feet. The Japanese Covered Bridge of Hội An (Chùa Cầu), Vietnam: a short covered wooden bridge. Lower part: three or four grey weathered stone piers with small round-topped arches between them, a white plastered band along the deck edge. Upper part: an open wooden gallery with a dark brown lattice balustrade and slim columns, a row of round Hội An silk lanterns (warm yellow and vermilion) hanging under the eaves along the whole gallery, softly glowing warm windows inside. Roof: a long curved roof of small terracotta-orange yin-yang tiles with gently upturned ends; the ridge and roof ends decorated with blue-and-white porcelain shard mosaic dragon and cloud ornaments (cobalt blue on white). At the right end a small pagoda block with ochre-red plastered walls and its own little tiled roof. Lantern bodies bright, warm and cleanly outlined so they can glow at night."
+  },
+  "cau_ngoi": {
+   "kind": "card",
+   "size": "1536x1024",
+   "prompt": "Seen exactly side-on along its length, as a pop-up paper piece: the bridge spans left to right across the full image width, both ends of the bridge resting on the bottom edge of the image (the ends are the lowest points), nothing below the bridge feet. A northern Vietnamese tiled-roof village bridge in the 'thượng gia hạ kiều' style (house above, bridge below), like the 500-year-old Chợ Lương tiled bridge of Nam Định: a long low bridge with nine bays, a row of dark ironwood columns standing on short grey stone pillar feet, a plain wooden plank deck with low wooden benches and railings between the columns where villagers rest, and a long gently curved roof of small dark grey-brown fish-scale tiles with slightly upturned corners. A small red-lacquered board under the roof at the centre reads the exact text \"CẦU NGÓI\"; no other text. Plain, rustic, warm brown wood."
+  },
+  "cau_dua": {
+   "kind": "card",
+   "size": "1536x1024",
+   "prompt": "Seen exactly side-on along its length, as a pop-up paper piece: the bridge spans left to right across the full image width, both ends of the bridge resting on the bottom edge of the image (the ends are the lowest points), nothing below the bridge feet. A Mekong Delta monkey bridge (cầu khỉ) made of coconut palm trunks: two long, slightly bowed coconut trunks laid end to end form the narrow footway, rising gently in the middle; they rest on crossed X-shaped bamboo leg braces planted at both ends and in the middle; a thin bamboo handrail runs along one side on bamboo posts, all lashed together with twine. Ochre-brown ringed coconut bark, pale green-yellow bamboo. Very light and airy, lots of empty space between the poles."
+  },
+  "cau_treo": {
+   "kind": "card",
+   "size": "1536x1024",
+   "prompt": "Seen exactly side-on along its length, as a pop-up paper piece: the bridge spans left to right across the full image width, both ends of the bridge resting on the bottom edge of the image (the ends are the lowest points), nothing below the bridge feet. A northern mountain (Tây Bắc) bamboo suspension footbridge: two tall bamboo A-frame towers lashed with rattan, one at each end; two rope cables sag in a gentle curve between the tower tops with thin vertical hanger ropes holding a narrow footway of woven bamboo slats that hangs only a little lower in the middle; a few small coloured prayer-style cloth strips (indigo, red, ochre) tied to the towers. Pale bamboo, brown rope."
+  },
+  "thuyen": {
+   "kind": "card",
+   "size": "1536x1024",
+   "prompt": "A small Vietnamese wooden sampan rowing boat (ghe / thuyền nan) seen exactly side-on, floating, the hull bottom touching the bottom edge of the image: a long slender dark brown wooden hull with upswept bow and stern, a painted eye on the bow (red and white), a low arched woven bamboo canopy in the middle, and a conical palm-leaf hat (nón lá) resting on the deck. No people, no water."
+  },
+  "lucbinh": {
+   "kind": "card",
+   "size": "1536x1024",
+   "prompt": "A small floating clump of water hyacinth (lục bình) seen from the front: glossy round bright green leaves with swollen stalks, and two short spikes of pale lilac-purple flowers with a yellow eye; the clump's base flat on the bottom edge of the image. No water."
+  },
+  "caooc": {
+   "prompt": "A tall modern glass office tower as seen in Ho Chi Minh City: a slender skyscraper with a grid of blue-green glass windows between cream paper mullions, a slightly tapered crown with a small helipad disc, and a low podium entrance at the base. Still made of layered cut paper, not glossy. Keep the windows light and clearly bounded.",
+   "size": "1024x1536",
+   "kind": "card"
+  },
+  "nharong": {
+   "prompt": "A Ba Na communal house (nhà rông) of the Vietnamese Central Highlands: a very tall, steep, axe-blade shaped thatched roof several times higher than the walls, with a woven bamboo ridge decoration on top, standing on a row of thick wooden stilts. Plaited bamboo walls in warm brown, a small central doorway reached by a notched-log ladder. Keep the doorway light and clearly bounded.",
+   "size": "1024x1536",
+   "kind": "card"
+  },
+  "nhaong": {
+   "prompt": "A narrow four-storey Saigon tube house (nhà ống): a tall slim townhouse painted in cheerful pastel colours, each floor with a small balcony with iron railings and potted plants, louvred shutters, a roller-shutter shopfront on the ground floor with a striped awning and a blank signboard, and a water tank on the flat roof. Keep the windows light and clearly bounded.",
+   "size": "1024x1536",
+   "kind": "card"
+  },
+  "thapcham": {
+   "prompt": "A Cham tower (tháp Chăm) of central Vietnam: a tall red-brick temple tower with a square body, pilasters and a false door with a pointed arch, and a three-tiered diminishing roof with small corner turrets and a stone finial, slightly weathered with a few tufts of grass growing on the ledges.",
+   "size": "1024x1536",
+   "kind": "card"
+  },
+  "cay_caosu": {
+   "prompt": "A rubber tree: a tall, straight, pale grey-brown trunk with a diagonal spiral tapping cut and a small bowl tied below it catching white latex, and a modest crown of light green oval leaves at the top.",
+   "size": "1024x1536",
+   "kind": "card"
+  },
+  "denduong": {
+   "prompt": "A modern city street lamp: a tall slim grey metal pole with a curved arm and a single warm glowing lamp head at the top, and a small traffic sign plate halfway up. Keep the lamp light and clearly bounded.",
+   "size": "1024x1536",
+   "kind": "card"
+  },
+  "cayxoai": {
+   "prompt": "A broad mango tree with a short sturdy brown trunk and a wide rounded crown of long dark green leaves, hung with many ripe yellow-orange mangoes on thin stems.",
+   "size": "1024x1024",
+   "kind": "card"
+  },
+  "ray_caphe": {
+   "prompt": "Top-down view of a square-ish plot of red basalt earth planted with neat rows of round dark green coffee bushes dotted with tiny red cherries, with a slightly irregular torn-paper outline and a cream paper edge.",
+   "size": "1024x1024",
+   "kind": "flat"
+  },
+  "duong_nhua": {
+   "prompt": "Top-down view of grey city pavement that fills the whole square edge to edge and tiles seamlessly: large slightly uneven grey paving slabs in two close greys with thin darker joints and a few faint cracks and speckles. No border, no outline, no markings.",
+   "size": "1024x1024",
+   "kind": "flat"
+  },
+  "voi": {
+   "prompt": "An Asian elephant in side view facing right, as kept by the M'nông people of Đắk Lắk: grey wrinkled skin, small ears, a gently curled trunk, short tusks, and a woven bamboo howdah seat with a red and indigo brocade blanket strapped on its back. Calm, friendly expression.",
+   "size": "1536x1024",
+   "kind": "character"
+  },
+  "xehutieu": {
+   "prompt": "A Vietnamese street noodle cart (xe hủ tiếu gõ): a small stainless-steel and wood pushcart on two bicycle wheels with a glass display case holding noodles, greens and meat, a steaming stock pot at one end, a stack of bowls, and a striped canopy. A hanging signboard reads exactly \"HỦ TIẾU\".",
+   "size": "1024x1024",
+   "kind": "card"
+  },
+  "congchieng": {
+   "prompt": "A set of Central Highlands bronze gongs (cồng chiêng): five round bronze gongs of decreasing size, each with a raised centre boss, hanging in a row by cords from a simple dark wooden rack with two posts. A padded wooden mallet leans against one post.",
+   "size": "1536x1024",
+   "kind": "card"
+  },
+  "cau_sat": {
+   "prompt": "Side view of an old riveted iron truss bridge in the style of colonial-era bridges in southern Vietnam: a long low span with a repeating X-braced steel truss painted dark indigo-grey with visible rivets, a flat deck with a simple railing, and two stone piers at the ends. Long horizontal shape.",
+   "size": "1536x1024",
+   "kind": "card"
+  },
+  "caphe_cay": {
+   "prompt": "A low, rounded coffee bush with glossy dark green oval leaves and clusters of ripe red and a few green coffee cherries along its branches, on a short brown stem.",
+   "size": "1024x1024",
+   "kind": "card"
+  },
+  "ghe": {
+   "prompt": "A Mekong Delta floating-market boat (ghe) in side view: a long wooden boat with painted red eyes on the bow, a low arched woven roof amidships, heaps of pineapples, pumpkins and bananas on deck, and a tall bamboo pole (cây bẹo) at the bow with sample fruit hanging from it. Long horizontal shape.",
+   "size": "1536x1024",
+   "kind": "card"
+  },
+  "xuongrong": {
+   "prompt": "A small prickly-pear cactus of the dry central coast: a few flat green paddle-shaped pads with tiny spines, one small pink flower and one red fruit, growing from sandy ground.",
+   "size": "1024x1536",
+   "kind": "card"
+  },
+  "bendo": {
+   "prompt": "A tiny riverside ferry landing: a short wooden jetty of planks on bamboo stilts with one mooring post wrapped in rope and a small hand-painted wooden arrow sign with no text. Low horizontal shape.",
+   "size": "1536x1024",
+   "kind": "card"
+  },
+  "miquang": {
+   "prompt": "A bowl of mì Quảng: wide flat yellow turmeric noodles in a shallow bowl with a little broth, topped with shrimp, sliced pork, a quail egg, crushed peanuts, fresh herbs and a large toasted sesame rice cracker standing at the side.",
+   "size": "1024x1024",
+   "kind": "card"
+  },
+  "comlam": {
+   "prompt": "Cơm lam: two short green bamboo tubes, one split open lengthwise to show the white sticky rice cooked inside, lying on a banana leaf with a tiny dish of sesame salt.",
+   "size": "1024x1024",
+   "kind": "card"
+  },
+  "hutieu": {
+   "prompt": "A bowl of southern Vietnamese hủ tiếu: thin clear rice noodles in light broth with sliced pork, two shrimp, a quail egg, chives, bean sprouts and fried garlic, with chopsticks resting on the rim.",
+   "size": "1024x1024",
+   "kind": "card"
+  },
+  "banhxeo": {
+   "prompt": "A Mekong Delta bánh xèo: a large crisp golden-yellow folded rice pancake with lacy edges, showing shrimp, pork and bean sprouts at the opening, on a banana leaf with a few lettuce and herb leaves.",
+   "size": "1024x1024",
+   "kind": "card"
+  },
+  "xoi": {
+   "prompt": "Five-colour sticky rice (xôi ngũ sắc) of the northern highlands: a mound of glutinous rice in five clearly separated coloured wedges, white, red, yellow, purple and green, served on a round bamboo tray lined with a banana leaf.",
+   "size": "1024x1024",
+   "kind": "card"
+  },
+  "thuyenthung": {
+   "prompt": "A Vietnamese round basket boat (thuyền thúng) seen from a low side angle: a circular woven-bamboo coracle sealed dark with resin, with a blue painted rim, a single wooden paddle resting across it and a small pile of fishing net inside.",
+   "size": "1536x1024",
+   "kind": "card"
+  },
+  "daydenlong": {
+   "prompt": "A string of small silk Hội An lanterns hanging in a gentle curve from a cord between two short bamboo poles: seven lanterns in red, yellow, orange and teal, each softly glowing. Long horizontal shape. Keep the lantern lights clearly bounded.",
+   "size": "1536x1024",
+   "kind": "card"
+  },
+  "vit": {
+   "prompt": "A small white farm duck in side view facing right, with an orange bill and orange webbed feet, plump body and a short upturned tail.",
+   "size": "1024x1024",
+   "kind": "character"
   }
+ }
 }

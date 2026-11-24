@@ -189,6 +189,86 @@
   },
   "lucbinh": {
    "file": "lucbinh.webp"
+  },
+  "caooc": {
+   "file": "caooc.webp",
+   "glow": "caooc.glow.webp"
+  },
+  "nharong": {
+   "file": "nharong.webp",
+   "glow": "nharong.glow.webp"
+  },
+  "nhaong": {
+   "file": "nhaong.webp",
+   "glow": "nhaong.glow.webp"
+  },
+  "thapcham": {
+   "file": "thapcham.webp"
+  },
+  "cay_caosu": {
+   "file": "cay_caosu.webp"
+  },
+  "denduong": {
+   "file": "denduong.webp",
+   "glow": "denduong.glow.webp"
+  },
+  "cayxoai": {
+   "file": "cayxoai.webp"
+  },
+  "ray_caphe": {
+   "file": "ray_caphe.webp"
+  },
+  "duong_nhua": {
+   "file": "duong_nhua.webp"
+  },
+  "voi": {
+   "file": "voi.webp"
+  },
+  "xehutieu": {
+   "file": "xehutieu.webp"
+  },
+  "congchieng": {
+   "file": "congchieng.webp"
+  },
+  "cau_sat": {
+   "file": "cau_sat.webp"
+  },
+  "caphe_cay": {
+   "file": "caphe_cay.webp"
+  },
+  "ghe": {
+   "file": "ghe.webp"
+  },
+  "xuongrong": {
+   "file": "xuongrong.webp"
+  },
+  "bendo": {
+   "file": "bendo.webp"
+  },
+  "miquang": {
+   "file": "miquang.webp"
+  },
+  "comlam": {
+   "file": "comlam.webp"
+  },
+  "hutieu": {
+   "file": "hutieu.webp"
+  },
+  "banhxeo": {
+   "file": "banhxeo.webp"
+  },
+  "xoi": {
+   "file": "xoi.webp"
+  },
+  "thuyenthung": {
+   "file": "thuyenthung.webp"
+  },
+  "daydenlong": {
+   "file": "daydenlong.webp",
+   "glow": "daydenlong.glow.webp"
+  },
+  "vit": {
+   "file": "vit.webp"
   }
  }
 }
