@@ -47,7 +47,7 @@ Mỗi vật chặn đường theo đúng phần chân của hình vẽ: game đo
 
     index.html              khung trang, giao diện, CSS (Three.js r128 nạp từ CDN)
     src/                    mã game, nạp theo thứ tự ghi trong index.html, dùng chung một phạm vi toàn cục
-    assets/audio/           nhạc: <vùng>_day.mp3, <vùng>_night.mp3 (vùng: dbsh, tb, ntb, tn, dnb, tnb); thiếu thì dùng day.mp3 / night.mp3
+    assets/audio/           nhạc từng vùng tạo bằng Gemini: <vùng>_day.mp3, <vùng>_night.mp3 (vùng: dbsh, tb, ntb, tn, dnb, tnb), chase.mp3 khi chó đuổi; thiếu thì dùng day.mp3 / night.mp3
     assets/audio/sfx/       tiếng động CC0 + manifest.json + CREDITS.md
     assets/sprites/         tranh thay thế + manifest.json (game tự nạp nếu có)
     art/reference/          hình hiện tại của từng vật, dùng làm ảnh tham khảo
