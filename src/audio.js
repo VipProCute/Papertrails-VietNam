@@ -14,8 +14,9 @@ const sfx={rustle(){if(!AC||AC.currentTime-lastRustle<.09)return;lastRustle=AC.c
   bark(){for(let k=0;k<2;k++){tone(520,.11,'square',.16,240,k*.17);hiss(.09,.12,1200,k*.17)}},horn(){tone(466,.16,'square',.13,0,0);tone(466,.22,'square',.13,0,.22)},
   thr(){tone(600,.15,'sine',.12,250)},over(){[4,3,1,0].forEach((n,k)=>tone(PENTA[n]/2,.5,'triangle',.22,0,k*.2))}};
 /* nhạc nền theo vùng: fetch + decodeAudioData, mỗi bài là chuỗi nguồn chồng nhau (hoà chuyển XF giây ở điểm lặp, không khe hở).
-   Mỗi vùng có cặp <khoá>_day/_night.mp3 nạp lười khi bước vào lần đầu, lỗi thì dùng day/night chung; tối đa 3 cặp trong bộ nhớ. */
-const XF=3,RXF=1.2,TRK={},REGM={};let trkOn=false,musicBus=null,curReg='',regTm=0,chS={st:0,buf:null,src:null,g:null},chOn=false,chChk=0;
+   Mỗi vùng có cặp <khoá>_day/_night.mp3; bài ngày/đêm chỉ nạp khi sắp cần (mỗi bài giải mã ra cỡ 60 MB), lỗi thì dùng day/night chung;
+   giữ vùng đang đứng và 1 vùng vừa rời. Nhạc vùng to hơn bài chung ~3,5 dB nên nhân RGV. */
+const XF=3,RXF=1.2,RGV=.67,TRK={},REGM={};let trkOn=false,musicBus=null,curReg='',regTm=0,chS={st:0,buf:null,src:null,g:null},chOn=false,chChk=0;
 function loadBuf(url,cb){try{fetch(url).then(r=>{if(!r.ok)throw 0;return r.arrayBuffer()}).then(ab=>new Promise((ok,no)=>{const p=AC.decodeAudioData(ab,ok,no);if(p&&p.catch)p.catch(no)})).then(b=>cb(b),()=>cb(null)).catch(()=>{})}catch(e){cb(null)}}
 function mkSlot(url,out,fb){const bus=AC.createGain();bus.gain.value=0;bus.connect(out);return{url,buf:null,st:0,v:null,bus,fb}}
 function slotLoad(s){if(s.st)return;s.st=1;loadBuf(s.url,b=>{s.buf=b;s.st=b?2:3})}
@@ -27,7 +28,7 @@ function slotTick(s,on,now){const buf=slotBuf(s);if(!on||!buf){slotStop(s);retur
   if(!s.v){s.v=slotVoice(s,buf,now,false);return}const o=s.v;
   if(!o.lp&&now>=o.t0+o.d-XF-.05){s.v=slotVoice(s,buf,now,true);o.g.gain.cancelScheduledValues(now);o.g.gain.setValueAtTime(1,now);o.g.gain.linearRampToValueAtTime(0,now+XF);try{o.src.stop(now+XF+.15)}catch(e){}}}
 function mkReg(key,gen){const rg=AC.createGain();rg.gain.value=0;rg.connect(musicBus);const p='assets/audio/'+(gen?'':key+'_'),g=TRK.gen;
-  const r={key,rg,lv:0,last:AC.currentTime,day:mkSlot(p+'day.mp3',rg,gen?null:g&&g.day),night:mkSlot(p+'night.mp3',rg,gen?null:g&&g.night)};REGM[key]=r;slotLoad(r.day);slotLoad(r.night);return r}
+  const r={key,rg,lv:0,last:AC.currentTime,day:mkSlot(p+'day.mp3',rg,gen?null:g&&g.day),night:mkSlot(p+'night.mp3',rg,gen?null:g&&g.night)};REGM[key]=r;if(gen){slotLoad(r.day);slotLoad(r.night)}return r}
 function dropReg(r){slotStop(r.day);slotStop(r.night);r.day.buf=r.night.buf=null;try{r.rg.disconnect()}catch(e){}delete REGM[r.key]}
 function initTracks(){if(trkOn||!AC||location.protocol==='file:')return;trkOn=true;try{musicBus=AC.createGain();musicBus.connect(master);
   const g=mkReg('gen',true);TRK.gen=g;TRK.day=g.day;TRK.night=g.night;chS.g=AC.createGain();chS.g.gain.value=0;chS.g.connect(master)}catch(e){trkOn=false}}
@@ -36,15 +37,15 @@ BUS.on('region',e=>{try{const k=BIOME[e.b].music;if(k)curReg=k}catch(x){}});
 function chaseTick(now){if(now-chChk>=.25){chChk=now;let on=false;if(state==='play'&&typeof dogs!=='undefined')for(const d of dogs)if(d.state==='chase'){on=true;break}chOn=on}
   if(chOn&&!chS.st){chS.st=1;loadBuf('assets/audio/chase.mp3',b=>{chS.buf=b;chS.st=b?2:3})}
   const go=chOn&&chS.buf;musicBus.gain.setTargetAtTime(go?.35:1,now,go?.2:.6);
-  if(go&&!chS.src){const s=AC.createBufferSource();s.buffer=chS.buf;s.loop=true;s.connect(chS.g);s.start(now);chS.src=s;const g=chS.g.gain;g.cancelScheduledValues(now);g.setValueAtTime(g.value,now);g.linearRampToValueAtTime(.7,now+.5)}
+  if(go&&!chS.src){const s=AC.createBufferSource();s.buffer=chS.buf;s.loop=true;s.connect(chS.g);s.start(now);chS.src=s;const g=chS.g.gain;g.cancelScheduledValues(now);g.setValueAtTime(g.value,now);g.linearRampToValueAtTime(.47,now+.5)}
   else if(!go&&chS.src){const s=chS.src;chS.src=null;const g=chS.g.gain;g.cancelScheduledValues(now);g.setValueAtTime(g.value,now);g.linearRampToValueAtTime(0,now+1.5);try{s.stop(now+1.7)}catch(e){}}}
 function tracks(){if(!trkOn)return false;const now=AC.currentTime,dt=Math.min(.25,Math.max(0,now-regTm));regTm=now;
-  if(curReg&&!REGM[curReg]){let n=0,old=null;for(const k in REGM)if(k!=='gen'&&k!==curReg){n++;if(!old||REGM[k].last<old.last)old=REGM[k]}if(n>=3&&old)dropReg(old);mkReg(curReg,false)}
-  const cr=REGM[curReg];if(cr)cr.last=now;const useCur=!!(cr&&(cr.day.buf||cr.night.buf));let any=false;
+  if(curReg&&!REGM[curReg]){let n=0,old=null;for(const k in REGM)if(k!=='gen'&&k!==curReg){n++;if(!old||REGM[k].last<old.last)old=REGM[k]}if(n>=2&&old)dropReg(old);mkReg(curReg,false)}
+  const cr=REGM[curReg];if(cr){cr.last=now;if(nightF<.85)slotLoad(cr.day);if(nightF>.15)slotLoad(cr.night)}const useCur=!!(cr&&(cr.day.buf||cr.night.buf));let any=false;
   const lvl=state==='over'?.25:.5,kk=1-Math.exp(-dt/RXF);
   for(const k in REGM){const r=REGM[k],want=(k===curReg&&useCur)||(k==='gen'&&!useCur)?1:0;r.lv+=(want-r.lv)*kk;if(!want&&r.lv<.01)r.lv=0;r.rg.gain.value=r.lv;const run=r.lv>0;
     slotTick(r.day,run,now);slotTick(r.night,run,now);if(slotBuf(r.day)||slotBuf(r.night))any=true;
-    if(run){r.day.bus.gain.setTargetAtTime((1-nightF)*lvl,now,.8);r.night.bus.gain.setTargetAtTime(nightF*lvl,now,.8)}}
+    if(run){r.day.bus.gain.setTargetAtTime((1-nightF)*lvl*(r.day.buf&&k!=='gen'?RGV:1),now,.8);r.night.bus.gain.setTargetAtTime(nightF*lvl*(r.night.buf&&k!=='gen'?RGV:1),now,.8)}}
   try{chaseTick(now)}catch(e){}return any}
 function music(dt){if(!AC||!soundOn||state==='menu')return;if(tracks())return;if(state!=='play')return;musicT-=dt;if(musicT<=0){musicT=.35+Math.random()*1.1;const n=PENTA[(Math.random()*PENTA.length)|0];tone(n,1.3,'triangle',.05);if(Math.random()<.3)tone(n*1.5,1.1,'triangle',.03,0,.12)}}
 function toggleSound(){soundOn=!soundOn;if(master)master.gain.value=soundOn?.55:0;try{if(AC)soundOn?AC.resume():AC.suspend()}catch(e){}$('bSound').textContent='Tiếng: '+(soundOn?'bật':'tắt');$('bSound').setAttribute('aria-pressed',soundOn)}
